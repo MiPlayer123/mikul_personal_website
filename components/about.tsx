@@ -1,16 +1,25 @@
+"use client";
+
 import React from 'react'
+import SectionHeading from './section-heading'
+import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <section
-        className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+    
+    <motion.section
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="about"
     >
-        <h2>About me</h2>
+        <SectionHeading>About me</SectionHeading>
 
         <p className="mb-3">
             I am currently studing {" "} <span className="font-medium">Computer Science and Economics</span> at Columbia University. 
             As an <a href="https://www.engineering.columbia.edu/egleston-scholars/mikul-saravanan" className="text-blue-800 hover:text-blue-900" target='_blank'>Egleston Scholar</a>, I am currently actively 
-            <span className='font-medium'>researching at the The Accessible and Accelerated Robotics Lab </span><a href="https://a2r-lab.org/" className="font-medium text-blue-800 hover:text-blue-900" target='_blank'>(A²R Lab)</a>.
+            <span className='font-medium'> researching at the The Accessible and Accelerated Robotics Lab </span><a href="https://a2r-lab.org/" className="font-medium text-blue-800 hover:text-blue-900" target='_blank'>(A²R Lab)</a>.
             I am also a member of the {" "} <span className="font-medium">Columbia University Formula Racing</span> team and 
             help lead the building of a 12lb battle bot for{" "} <span className="font-medium">Columbia University Robotics Club's Combat Robotics</span> subteam.
             In addition, I am a member of  {" "} <span className="font-medium">Columbia Space Initaive</span> and the Columbia Financial Investment Group. 
@@ -37,6 +46,6 @@ export default function About() {
             <span className="font-medium">working on new projects and learning</span>.
         </p>
         
-    </section>
+    </motion.section>
   )
 }
