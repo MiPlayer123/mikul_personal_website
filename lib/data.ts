@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import a2r_lab from "@/public/a2r_lab.png";
+import mywebsite from "@/public/mywebsite.png";
+import byrds from "@/public/byrds.png";
+import stocktrading from "@/public/stocktrading.png";
 
 export const links = [
   {
@@ -62,46 +66,36 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "A²R Lab",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "The A²R Lab develops algorithms for dynamic motion planning and control of robots. I am the link betwen software and the robot dog hardware.",
+    tags: ["Python", "C", "Robotics", "Motion Planning", "Algorithms"],
+    imageUrl: a2r_lab,
+    url: "https://a2r-lab.org/",
   },
   {
-    title: "rmtDev",
+    title: "Personal Website",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "I created this website to showcase all my project,s big and small, and learn web dev!",
+    tags: ["React", "Next.js", "Tailwind", "TypeScript"],
+    imageUrl: mywebsite,
+    url: "https://github.com/MiPlayer123/mikul_personal_website",
   },
   {
-    title: "Word Analytics",
+    title: "BYRDS",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A natural disaster response aid that helps responders find critical information and location to save lives .",
+    tags: ["Python", "GPT4-V", "OpenAI Clips", "Figma", "Tkinter"],
+    imageUrl: byrds,
+    url: "https://github.com/julialding/imagine/tree/main",
   },
   {
-    title: "CorpComment",
+    title: "Stock Trading",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "Analyzing stocks programmatically to pinpoint the best moments for buying and selling strategicall.",
+    tags: ["Python", "Data Analytics", "Stock Indicators", "PyTorch", "ML"],
+    imageUrl: stocktrading,
+    url: "",
   },
 ] as const;
 
@@ -112,6 +106,7 @@ export const pastProjectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
+    url: "",
   },
   {
     title: "rmtDev",
@@ -119,6 +114,7 @@ export const pastProjectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    url: "",
   },
   {
     title: "Word Analytics",
@@ -126,6 +122,7 @@ export const pastProjectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    url: "",
   },
   {
     title: "CorpComment",
@@ -133,6 +130,7 @@ export const pastProjectsData = [
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
+    url: "",
   },
   {
     title: "rmtDev",
@@ -140,6 +138,7 @@ export const pastProjectsData = [
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
+    url: "",
   },
   {
     title: "Word Analytics",
@@ -147,6 +146,7 @@ export const pastProjectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    url: "",
   },
 ] as const;
 
