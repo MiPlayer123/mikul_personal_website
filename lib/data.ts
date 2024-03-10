@@ -131,7 +131,7 @@ export const projectsData = [
     imageUrl: stocktrading,
     url: "",
   },
-] as const;
+];
 
 export const pastProjectsData = [
   {
@@ -182,7 +182,7 @@ export const pastProjectsData = [
     imageUrl: wordanalyticsImg,
     url: "",
   },
-] as const;
+];
 
 export const skillsData = [
   "Python",

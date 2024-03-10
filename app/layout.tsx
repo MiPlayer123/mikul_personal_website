@@ -1,6 +1,6 @@
 import Header from "@/components/header";
 
-import type { Metadata } from "next";
+import type { Meta } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
