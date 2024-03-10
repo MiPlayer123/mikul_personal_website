@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 import React from 'react'
@@ -24,7 +25,7 @@ export default function Intro() {
                         animate={{opacity: 1, scale: 1}}
                         transition={{type: "tween", duration: 0.2}}
                     >
-                        <img src="/Mikul.jpg" alt="Mikul Saravanan Portrait" width={195} height={195} className="h-25 w-25 rounded-full object-cover border-[0.35rem] border-white shadow-xl"/>
+                        <Image src="/Mikul.jpg" alt="Mikul Saravanan Portrait" width={195} height={195} priority={true} className="h-25 w-25 rounded-full object-cover border-[0.35rem] border-white shadow-xl"/>
                     </motion.div>
                     <motion.span className='absolute bottom-0 right-0 text-4xl'
                         initial={{opacity: 0, scale: 0}}
