@@ -1,6 +1,4 @@
 import Header from "@/components/header";
-
-import type { Meta } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
@@ -11,7 +9,7 @@ import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Mikul | Personal Portfolio",
   description: "Mikul Saravanan is Columbia University student, Egleston Scholar, and passionate about techology and finance. This is his personal portfolio.",
 };
