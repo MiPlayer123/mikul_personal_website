@@ -1,7 +1,8 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { BsBank } from "react-icons/bs";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -39,28 +40,44 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Columbia University",
+    location: "New York, NY",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Clubs: CU Formula Racing, CU Robotics Club - Battlebots, Columbia Space Initiative, Paragon Global Investments (Quant Division) ",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2023 - present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Cranbrook HUB",
+    location: "Bloomfield Hills, Mi",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Instructed Horizons-Upward Bound students in foundational robotics by guiding hands-on VEX robot construction and programming for individual teams.",
+    icon: React.createElement(FaChalkboardTeacher),
+    date: "2023 | 3 months",
+  },
+  {
+    title: "Rockbridge Growth Equity",
+    location: "Detroit, Mi",
+    description:
+      "Interned at private equity firm, learning about and working on fundemental analysis of potential investments. Attended board meetings, and created company summaries.",
+    icon: React.createElement(BsBank),
+    date: "2023 | 1 month",
+  },
+  {
+    title: "Intrepid Control Systems",
+    location: "Troy, Mi",
+    description:
+      "Drasically reduced hardware device startup time by improving GPS startup. Revamped loe-level C code to store and access critical data.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2022 | 3 months",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Intrepid Control Systems",
+    location: "Troy, Mi",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Expedited the PCB file generation process by creating a CI/CD pipeline in GitLab. Also included PCB validation, assembly, build, and BOM file generation.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 | 3 months",
   },
 ] as const;
 
@@ -76,7 +93,7 @@ export const projectsData = [
   {
     title: "Personal Website",
     description:
-      "I created this website to showcase all my project,s big and small, and learn web dev!",
+      "I created this website to showcase all my projects, big and small, and learn web dev!",
     tags: ["React", "Next.js", "Tailwind", "TypeScript"],
     imageUrl: mywebsite,
     url: "https://github.com/MiPlayer123/mikul_personal_website",
@@ -92,7 +109,7 @@ export const projectsData = [
   {
     title: "Stock Trading",
     description:
-      "Analyzing stocks programmatically to pinpoint the best moments for buying and selling strategicall.",
+      "Analyzing stocks programmatically to pinpoint the best moments for buying and selling strategically.",
     tags: ["Python", "Data Analytics", "Stock Indicators", "PyTorch", "ML"],
     imageUrl: stocktrading,
     url: "",
@@ -101,73 +118,80 @@ export const projectsData = [
 
 export const pastProjectsData = [
   {
-    title: "CorpComment",
+    title: "Air Cleaning Robot v2",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["ROS", "CAD", "CFD", "Sesnors", "Autonomus Robot", "CV"],
     imageUrl: corpcommentImg,
     url: "",
   },
   {
-    title: "rmtDev",
+    title: "Audio Forensics Research",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["Python", "Deep Learing", "PyTorch", "Research"],
     imageUrl: rmtdevImg,
     url: "",
   },
   {
-    title: "Word Analytics",
+    title: "Air Cleaning Robot v1",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["CAD", "CFD", "Electronics", "Air Quality", "Python"],
     imageUrl: wordanalyticsImg,
     url: "",
   },
   {
-    title: "CorpComment",
+    title: "Credit Deals",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["HTML", "CSS", "PHP", "MySQL", "API"],
     imageUrl: corpcommentImg,
     url: "",
   },
   {
-    title: "rmtDev",
+    title: "VEX Robotics - 39K",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: ["VEX", "Robotics", "CAD", "C++", "PID"],
     imageUrl: rmtdevImg,
     url: "",
   },
   {
-    title: "Word Analytics",
+    title: "6-Axis Robot Arm",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: [],
     imageUrl: wordanalyticsImg,
     url: "",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
+  "Python",
+  "Java",
+  "C++",
+  "C",
+  "PyTorch",
+  "Machine Learning",
   "React",
   "Next.js",
-  "Node.js",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "ROS",
+  "HTML",
+  "PHP",
+  "CAD",
+  "Simulation",
+  "Figma",
+  "Robotics",
+  "Algorithms",
+  "Electronics",
+  "Microsoft Office",
+  "Data Analysis",
+  "Presentation",
+  "Passionate",
+  "Problem Solver",
+  "Adaptive",
+  "Collaborative",
+
 ] as const;

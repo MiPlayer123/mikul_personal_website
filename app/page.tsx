@@ -1,7 +1,10 @@
 import About from "@/components/about";
+import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
+import Skills from "@/components/skills";
+import VideoDropdown from "@/components/video-dropdown";
 
 export default function Home() {
   return (
@@ -10,7 +13,9 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Projects />
-      <SectionDivider />
+      <VideoDropdown />
+      <Skills />
+      <Experience />
     </main>
   );
 }
