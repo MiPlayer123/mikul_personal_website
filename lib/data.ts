@@ -4,13 +4,16 @@ import { FaReact } from "react-icons/fa";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { BsBank } from "react-icons/bs";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import a2r_lab from "@/public/a2r_lab.png";
 import mywebsite from "@/public/mywebsite.png";
 import byrds from "@/public/byrds.png";
 import stocktrading from "@/public/stocktrading.png";
+import robotV2 from "@/public/robotV2.png";
+import ouResearch from "@/public/ouResearch.png";
+import robotV1 from "@/public/robotV1_1.png";
+import creditDeals from "@/public/creditDeals.png";
+import robotArm from "@/public/robotArm.jpg";
+import vex39k from "@/public/39k.jpg";
 
 export const links = [
   {
@@ -58,7 +61,7 @@ export const experiencesData = [
   },
   {
     title: "Cranbrook HUB",
-    location: "Bloomfield Hills, Mi",
+    location: "Bloomfield Hills, MI",
     description:
       "Instructed Horizons-Upward Bound students in foundational robotics by guiding hands-on VEX robot construction and programming for individual teams.",
     icon: React.createElement(FaChalkboardTeacher),
@@ -76,7 +79,7 @@ export const experiencesData = [
     title: "Intrepid Control Systems",
     location: "Troy, MI",
     description:
-      "Drasically reduced hardware device startup time by improving GPS startup. Revamped loe-level C code to store and access critical data.",
+      "Drasically reduced hardware device startup time by improving GPS startup. Revamped low-level C code to store and access critical data.",
     icon: React.createElement(CgWorkAlt),
     date: "2022 | 3 months",
   },
@@ -92,7 +95,7 @@ export const experiencesData = [
     title: "Student Researcher @ Oakland University",
     location: "Rochester Hills, MI",
     description:
-      "Developed adversarial attack defense algorithms & ASV countermeasures using teacher/student and federated learning techniques. Published a comparative analysis of ASV methods ",
+      "Developed adversarial attack defense algorithms & ASV countermeasures using teacher/student and federated learning techniques. Published a comparative analysis of ASV methods.",
     icon: React.createElement(FaReact),
     date: "2020 - 2022",
   },
@@ -118,7 +121,7 @@ export const projectsData = [
   {
     title: "BYRDS",
     description:
-      "A natural disaster response aid that helps responders find critical information and location to save lives .",
+      "A natural disaster response aid that helps responders find critical information and location to save lives.",
     tags: ["Python", "GPT4-V", "OpenAI Clips", "Figma", "Tkinter"],
     imageUrl: byrds,
     url: "https://github.com/julialding/imagine/tree/main",
@@ -137,50 +140,50 @@ export const pastProjectsData = [
   {
     title: "Air Cleaning Robot v2",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "This is v2 of my novel autonomous robot with a complete redesign, new ROS navigation stack, and better performance.",
     tags: ["ROS", "CAD", "CFD", "Sesnors", "Autonomus Robot", "CV"],
-    imageUrl: corpcommentImg,
-    url: "",
+    imageUrl: robotV2,
+    url: "https://github.com/MiPlayer123/better_air_bot",
   },
   {
     title: "Audio Forensics Research",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["Python", "Deep Learing", "PyTorch", "Research"],
-    imageUrl: rmtdevImg,
-    url: "",
+      "Developed adversarial attack defense algorithms & ASV countermeasures using teacher/student and federated learning techniques.",
+    tags: ["Python", "Deep Learing", "PyTorch", "Research", "ASV"],
+    imageUrl: ouResearch,
+    url: "https://www.researchgate.net/scientific-contributions/Mikul-Saravanan-2232381117",
   },
   {
     title: "Air Cleaning Robot v1",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A novel multipurpose air-handling robot that purifies, humidifies, and disinfects the air evenly within a room or rooms.",
     tags: ["CAD", "CFD", "Electronics", "Air Quality", "Python"],
-    imageUrl: wordanalyticsImg,
-    url: "",
+    imageUrl: robotV1,
+    url: "https://youtu.be/qHCJDDwnEOc",
   },
   {
     title: "Credit Deals",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Project website that manages all Credit Card deals from Visa (API), MasterCard (soon), and custom deals so you know which credit card to use when.",
     tags: ["HTML", "CSS", "PHP", "MySQL", "API"],
-    imageUrl: corpcommentImg,
-    url: "",
+    imageUrl: creditDeals,
+    url: "https://github.com/MiPlayer123/CreditDeals",
   },
   {
     title: "VEX Robotics - 39K",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "VEX Robotics team 39K Rest in Pieces. Led the team to be one of the top perorming teams in the world for 4+ years, working on all aspects of the robot.",
     tags: ["VEX", "Robotics", "CAD", "C++", "PID"],
-    imageUrl: rmtdevImg,
-    url: "",
+    imageUrl: vex39k,
+    url: "https://www.youtube.com/vspuzzler",
   },
   {
     title: "6-Axis Robot Arm",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "Designed, constructed, and programmed a low-cost and lightweight robot arm with novel dynamic soft gripper.",
     tags: [],
-    imageUrl: wordanalyticsImg,
-    url: "",
+    imageUrl: robotArm,
+    url: "https://youtu.be/VcGS_pkGSuc",
   },
 ];
 
