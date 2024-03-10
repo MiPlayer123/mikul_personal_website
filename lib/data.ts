@@ -1,5 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 import { FaChalkboardTeacher } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { BsBank } from "react-icons/bs";
@@ -40,6 +41,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Researcher @ The Accessible and Accelerated Robotics Lab (A²R Lab)",
+    location: "Barnard Collge/ Columbia University",
+    description:
+      "Developing and implementing open-source algorithms for dynamic motion planning and control. Now taking these algorithms and implementing them on the robot dog & robot arm hardware.",
+    icon: React.createElement(FaReact),
+    date: "2024 - present",
+  },
+  {
     title: "Columbia University",
     location: "New York, NY",
     description:
@@ -57,7 +66,7 @@ export const experiencesData = [
   },
   {
     title: "Rockbridge Growth Equity",
-    location: "Detroit, Mi",
+    location: "Detroit, MI",
     description:
       "Interned at private equity firm, learning about and working on fundemental analysis of potential investments. Attended board meetings, and created company summaries.",
     icon: React.createElement(BsBank),
@@ -65,7 +74,7 @@ export const experiencesData = [
   },
   {
     title: "Intrepid Control Systems",
-    location: "Troy, Mi",
+    location: "Troy, MI",
     description:
       "Drasically reduced hardware device startup time by improving GPS startup. Revamped loe-level C code to store and access critical data.",
     icon: React.createElement(CgWorkAlt),
@@ -73,11 +82,19 @@ export const experiencesData = [
   },
   {
     title: "Intrepid Control Systems",
-    location: "Troy, Mi",
+    location: "Troy, MI",
     description:
       "Expedited the PCB file generation process by creating a CI/CD pipeline in GitLab. Also included PCB validation, assembly, build, and BOM file generation.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 | 3 months",
+  },
+  {
+    title: "Student Researcher @ Oakland University",
+    location: "Rochester Hills, MI",
+    description:
+      "Developed adversarial attack defense algorithms & ASV countermeasures using teacher/student and federated learning techniques. Published a comparative analysis of ASV methods ",
+    icon: React.createElement(FaReact),
+    date: "2020 - 2022",
   },
 ] as const;
 

@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <section ref={ref} id="projects" className='scroll-mt-28 mb-5'>
         <SectionHeading>Current Projects</SectionHeading>
-        <div className="current-projects grid grid-cols-2 gap-4 scale-95 mb-20">
+        <div className="current-projects grid sm:grid-cols-2 gap-4 scale-95 mb-20">
           {
             projectsData.map((project, index) => (
               <React.Fragment key={index}>
@@ -23,7 +23,7 @@ export default function Projects() {
 
         </div>  
         <SectionHeading>Past Projects</SectionHeading>
-        <div className="past-projects grid grid-cols-2 gap-5 scale-90">
+        <div className="past-projects grid sm:grid-cols-2 gap-5 scale-90">
           {
             pastProjectsData.map((project, index) => (
               <React.Fragment key={index}>

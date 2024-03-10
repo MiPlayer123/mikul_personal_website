@@ -24,14 +24,14 @@ export default function Contact() {
       opacity: 1,
     }}
     transition={{
-      duration: 1,
+      duration: 1.2,
     }}
     viewport={{
       once: false,
     }}
   >
         <SectionHeading>Contact Me</SectionHeading>
-        <p className="text-gray-700 -mt-6 dark:text-white/80">Please contact me directly at <a className='underline' href='mailto:mikul.saravanan@columbia.edu'>mikul.saravanan@columbia.edu</a> or though this form.</p>
+        <p className="text-gray-700 -mt-6 dark:text-white/80">Please contact me directly at <a className='underline' href='mailto:mikulventure@gmail.com'>mikulventure@gmail.com</a> or though this form.</p>
 
         <form className="mt-10 flex flex-col dark:text-black"
             action={async (formData) => {

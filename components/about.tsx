@@ -21,9 +21,19 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
 
         <p className="mb-3">
+            An avid learner and a passionate maker, I want to use technology to {" "} <span className="font-medium">impact the world</span>. 
+            My passions have led me to explore and research. As a result, my favorite project is my air cleaning robot is 
+            <a href="https://patents.google.com/patent/US20220390135A1/" className="links" target='_blank'> patent pending </a>
+            and <a href="https://doi.org/10.36838/v5i1.17" className="links" target='_blank'>published</a>. 
+            In the past, I have also published a <a href="https://link.springer.com/article/10.1007/s10462-023-10539-8" className="links" target='_blank'>paper on Audio Forensics</a>.
+            I love to automate things, and I have {" "} <span className="underline">smartified</span> my room and my home. I also became a 
+            <a href="https://devpost.com/MiPlayer123?ref_content=user-portfolio&ref_feature=portfolio" className="links" target='_blank'> hack[athon]er</a>.
+        </p>
+
+        <p className="mb-3">
             I am currently studing {" "} <span className="font-medium">Computer Science and Economics</span> at Columbia University. 
-            As an <a href="https://www.engineering.columbia.edu/egleston-scholars/mikul-saravanan" className="text-blue-800 hover:text-blue-900" target='_blank'>Egleston Scholar</a>, I am currently actively 
-            <span className='font-medium'> researching at the The Accessible and Accelerated Robotics Lab </span><a href="https://a2r-lab.org/" className="font-medium text-blue-800 hover:text-blue-900" target='_blank'>(A²R Lab)</a>.
+            As an <a href="https://www.engineering.columbia.edu/egleston-scholars/mikul-saravanan" className="links" target='_blank'>Egleston Scholar</a>, I am currently actively 
+            <span className='font-medium'> researching at the The Accessible and Accelerated Robotics Lab </span><a href="https://a2r-lab.org/" className="font-medium links" target='_blank'>(A²R Lab)</a>.
             I am also a member of the {" "} <span className="font-medium">Columbia University Formula Racing</span> team and 
             help lead the building of a 12lb battle bot for{" "} <span className="font-medium">Columbia University Robotics Club's Combat Robotics</span> subteam.
             In addition, I am a member of  {" "} <span className="font-medium">Columbia Space Initaive</span> and the Columbia Financial Investment Group. 
@@ -35,9 +45,7 @@ export default function About() {
             I love creating projects and building things from the ground up, both on the {" "}
             <span className="font-medium">hardware side and software side</span>.{" "}
             <span className="italic">My favorite part of programming</span> is the
-            problem-solving aspect. I <span className="underline">love</span> the
-            feeling of finally figuring out a solution to a problem. In the same sense, I enjoy researching and 
-            analyzing compaines, stocks, or even problem solving. My goal is to become a
+            problem-solving aspect. My goal is to become a
             {" "} <span className="font-medium">startup founder one day</span>
             . I am always looking to learn new skills and technologies. I am currently looking for {" "}
             <span className="font-medium">intership oppurtunites</span> as a software
