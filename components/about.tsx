@@ -21,7 +21,7 @@ export default function About() {
         <SectionHeading>About me</SectionHeading>
 
         <p className="mb-3">
-            An avid learner and a passionate maker, I want to use technology to {" "} <span className="font-medium">impact the world</span>. 
+            An avid learner and a passionate maker, I want to use technology to {" "} <span className="underline">impact the world</span>. 
             My passions have led me to explore and research. As a result, my favorite project is my air cleaning robot is 
             <a href="https://patents.google.com/patent/US20220390135A1/" className="links" target='_blank'> patent pending </a>
             and <a href="https://doi.org/10.36838/v5i1.17" className="links" target='_blank'>published</a>. 
@@ -33,12 +33,12 @@ export default function About() {
         <p className="mb-3">
             I am currently studing {" "} <span className="font-medium">Computer Science and Economics</span> at Columbia University. 
             As an <a href="https://www.engineering.columbia.edu/egleston-scholars/mikul-saravanan" className="links" target='_blank'>Egleston Scholar</a>, I am currently actively 
-            <span className='font-medium'> researching at the The Accessible and Accelerated Robotics Lab </span><a href="https://a2r-lab.org/" className="font-medium links" target='_blank'>(A²R Lab)</a>.
-            I am also a member of the {" "} <span className="font-medium">Columbia University Formula Racing</span> team and 
-            help lead the building of a 12lb battle bot for{" "} <span className="font-medium">Columbia University Robotics Club&apos;s Combat Robotics</span> subteam.
+            <span className='underline'> researching at the The Accessible and Accelerated Robotics Lab </span><a href="https://a2r-lab.org/" className="font-medium links" target='_blank'>(A²R Lab)</a>.
+            I am also a member of the {" "} <span className="underline">Columbia University Formula Racing</span> team and 
+            help lead the building of a 12lb battle bot for{" "} <span className="underline">Columbia University Robotics Club&apos;s Combat Robotics</span> subteam.
             In addition, I am a member of  {" "} <span className="font-medium">Columbia Space Initaive</span> and the Columbia Financial Investment Group. 
-            I also am a part of {" "} <span className="font-medium">Paragon National Group&apos;s Quant Team</span> in the educational progam and
-            learning from CORE&apos;s {" "} <span className="font-medium">Project Management</span> Fellowship.
+            I also am a part of {" "} <span className="underline">Paragon National Group&apos;s Quant Team</span> in the educational progam and
+            learning from CORE&apos;s {" "} <span className="underline">Project Management</span> Fellowship.
         </p>
 
         <p className="mb-3">    
