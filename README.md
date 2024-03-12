@@ -1,4 +1,4 @@
-## Welcome to my personal [website! (mikulsaravanan.com)](https://www.mikulsaravanan.com/)
+## Welcome to my personal website! [(mikulsaravanan.com)](https://www.mikulsaravanan.com/)
 
 This is my personal website... well codebase. I use this as a learning opportunity as well as a way to show off some of my projects!
 

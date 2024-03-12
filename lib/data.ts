@@ -45,7 +45,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Researcher @ The Accessible and Accelerated Robotics Lab (A²R Lab)",
-    location: "Barnard Collge/ Columbia University",
+    location: "Barnard Collge, Columbia University",
     description:
       "Developing and implementing open-source algorithms for dynamic motion planning and control. Now taking these algorithms and implementing them on the robot dog & robot arm hardware.",
     icon: React.createElement(FaReact),
