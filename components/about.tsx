@@ -12,7 +12,7 @@ export default function About() {
     
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-20 max-w-[47rem] text-left leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
@@ -20,6 +20,48 @@ export default function About() {
     >
         <SectionHeading>About me</SectionHeading>
 
+        <p className='mb-3 text-center'>An avid learner and passionate maker, I always want to make something new. 🙂</p>
+
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>Passions</h2>
+        <ul style={{textAlign: 'left', marginBottom:'2rem', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+            <li>Developing technology with a real-world impact, highlighted by my air cleaning robot project which is 
+                <a href="https://patents.google.com/patent/US20220390135A1/" className="links" target='_blank'> patent pending </a>
+                and <a href="https://doi.org/10.36838/v5i1.17" className="links" target='_blank'>published</a>.
+            </li>
+            <li>Contributing to the field of Audio Forensics through 
+                <a href="https://link.springer.com/article/10.1007/s10462-023-10539-8" className="links" target='_blank'> published research</a>
+            </li>
+            <li>Automating and enhancing everyday life, from smartifying my home to attending 
+            <a href="https://devpost.com/MiPlayer123?ref_content=user-portfolio&ref_feature=portfolio" className="links" target='_blank'> hackathons</a>
+            .</li>
+            <li>Exploring the intersection of technology and finance.</li>
+        </ul>
+
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>Hobbies</h2>
+        <ul style={{textAlign: 'left', marginBottom:'2rem', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+            <li>Hanging out with friends</li>
+            <li>Exploring nature and national parks</li>
+            <li>Working out at the gym</li>
+            <li>Working on new projects and learning</li>
+        </ul>
+
+        <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>School Organizations</h2>
+        <ul style={{textAlign: 'left', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+            <li>Research @ researching at the The Accessible and Accelerated Robotics Lab 
+                <a href="https://a2r-lab.org/" className=" links" target='_blank'> (A²R Lab)</a>
+                .</li>
+            <li>Columbia University <a href="https://fsae.engineering.columbia.edu/" className="links" target='_blank'>Formula Racing</a></li>
+            <li>Columbia University 
+                <a href="https://www.columbiaroboticsclub.com/" className="links" target='_blank'> Robotics Club</a>
+                 - Combat Robotics (battlebots)</li>
+            <li>Columbia Space Initiative</li>
+            <li>
+                <a href="https://paragoninvestments.org/index.html" className="links" target='_blank'>Paragon Global Investment&apos;s </a>
+                 Quant Team</li>
+            <li>CORE&apos;s Project Management Fellowship.</li>
+            <li>CUSP: <a href="https://www.engineering.columbia.edu/egleston-scholars/mikul-saravanan" className="links" target='_blank'>Egleston Scholar</a></li>
+        </ul>
+        {/*
         <p className="mb-3">
             An avid learner and a passionate maker, I want to use technology to {" "} <span className="underline">impact the world</span>. 
             My passions have led me to explore and research. As a result, my favorite project is my air cleaning robot is 
@@ -57,6 +99,7 @@ export default function About() {
             hanging out with friends, going to the gym, and exploring nature and national parks. I also enjoy{" "}
             <span className="font-medium">working on new projects and learning</span>.
         </p>
+        */}
         
     </motion.section>
   )

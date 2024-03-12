@@ -1,8 +1,8 @@
-## Welcome to my personal [website!](https://mikul-portfolio.vercel.app/)
+## Welcome to my personal [website! (mikulsaravanan.com)](https://www.mikulsaravanan.com/)
 
 This is my personal website... well codebase. I use this as a learning opportunity as well as a way to show off some of my projects!
 
-This is built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend.
+This is built with React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Framer Motion, React Email & Resend, hosted on Vercel.
 
 I learned how to build a [React Website from ByteGrad](https://www.youtube.com/watch?v=sUKptmUVIBM), from which I also got inspiration. 
 
