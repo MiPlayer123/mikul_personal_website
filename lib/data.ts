@@ -14,6 +14,8 @@ import robotV1 from "@/public/robotV1_1.png";
 import creditDeals from "@/public/creditDeals.png";
 import robotArm from "@/public/robotArm.jpg";
 import vex39k from "@/public/39k.jpg";
+import pongirl from "@/public/pong_irl.png";
+import dash from "@/public/dash.png";
 
 export const links = [
   {
@@ -43,6 +45,14 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Digitization Intern - Magna International",
+    location: "Troy, MI",
+    description:
+      "Implementing text-to-speech and speech-to-text algorithms using AWS and integrating them with Gen AI via AWS and Claude.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - present | 3 months",
+  },
   {
     title: "Researcher @ The Accessible and Accelerated Robotics Lab (A²R Lab)",
     location: "Barnard Collge, Columbia University",
@@ -103,6 +113,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Dash - Startup",
+    description:
+      "Co-founded with Samay to apply technology to protect families by develoiping a distraction detection system for drivers.",
+    tags: ["Startup", "Computer-Vision", "App Dev", "AI", ],
+    imageUrl: dash,
+    url: "https://dash-demo-web.vercel.app/",
+  },
+  {
     title: "A²R Lab",
     description:
       "The A²R Lab develops algorithms for dynamic motion planning and control of robots. I am the link betwen software and the robot dog hardware.",
@@ -119,14 +137,6 @@ export const projectsData = [
     url: "https://github.com/MiPlayer123/mikul_personal_website",
   },
   {
-    title: "BYRDS",
-    description:
-      "A natural disaster response aid that helps responders find critical information and location to save lives.",
-    tags: ["Python", "GPT4-V", "OpenAI Clips", "Figma", "Tkinter"],
-    imageUrl: byrds,
-    url: "https://github.com/julialding/imagine/tree/main",
-  },
-  {
     title: "Stock Trading",
     description:
       "Analyzing stocks programmatically to pinpoint the best moments for buying and selling strategically.",
@@ -137,6 +147,22 @@ export const projectsData = [
 ];
 
 export const pastProjectsData = [
+  {
+    title: "Pong IRL",
+    description:
+      "Team project by Aryan, Julia, Samay, and Wesley to create a real-life pong game using motors and physical conrol.",
+    tags: ["Arduion", "Stepper", " Electronics", "C", "Engineering"],
+    imageUrl: pongirl,
+    url: "https://www.youtube.com/watch?v=HaI8qRW8Zmc",
+  },
+  {
+    title: "BYRDS",
+    description:
+      "A natural disaster response aid that helps responders find critical information and location to save lives.",
+    tags: ["Python", "GPT4-V", "OpenAI Clips", "Figma", "Tkinter"],
+    imageUrl: byrds,
+    url: "https://github.com/julialding/imagine/tree/main",
+  },
   {
     title: "Air Cleaning Robot v2",
     description:

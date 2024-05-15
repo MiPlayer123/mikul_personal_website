@@ -50,7 +50,7 @@ export default function About() {
             <li>Research @ The Accessible and Accelerated Robotics Lab 
                 <a href="https://a2r-lab.org/" className=" links" target='_blank'> (A²R Lab)</a>
                 .</li>
-            <li>Columbia University <a href="https://fsae.engineering.columbia.edu/" className="links" target='_blank'>Formula Racing</a></li>
+            <li>Columbia University <a href="https://fsae.engineering.columbia.edu/" className="links" target='_blank'>Formula Racing</a> (HV Enclosure Lead)</li>
             <li>Columbia University 
                 <a href="https://www.columbiaroboticsclub.com/" className="links" target='_blank'> Robotics Club </a>
                  - Combat Robotics (battlebots)</li>
