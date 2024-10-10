@@ -16,6 +16,7 @@ import robotArm from "@/public/robotArm.jpg";
 import vex39k from "@/public/39k.jpg";
 import pongirl from "@/public/pong_irl.png";
 import dash from "@/public/dash.png";
+import accumulator from "@/public/accumulator.png";
 
 export const links = [
   {
@@ -46,12 +47,20 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Prompt Engineering Intern - Rilla",
+    location: "New York, NY",
+    description:
+      "Generate accurate prompts for sales/ marketing rep tracker systems that align with client use cases.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024 - present",
+  },
+  {
     title: "Digitization Intern - Magna International",
     location: "Troy, MI",
     description:
       "Implementing text-to-speech and speech-to-text algorithms using AWS and integrating them with Gen AI via AWS and Claude.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - present | 3 months",
+    date: "2024 - 2024 | 3 months",
   },
   {
     title: "Researcher @ The Accessible and Accelerated Robotics Lab (A²R Lab)",
@@ -129,12 +138,12 @@ export const projectsData = [
     url: "https://a2r-lab.org/",
   },
   {
-    title: "Personal Website",
+    title: "HV Enclosure - FSAE",
     description:
-      "I created this website to showcase all my projects, big and small, and learn web dev!",
-    tags: ["React", "Next.js", "Tailwind", "TypeScript"],
-    imageUrl: mywebsite,
-    url: "https://github.com/MiPlayer123/mikul_personal_website",
+      "I am creating and testing the High Voltate enclosure (accumulator) for our FSAE 2025 car.",
+    tags: ["Solidworks", "FEA", "Manufacturing", "Design"],
+    imageUrl: accumulator,
+    url: "https://fsae.engineering.columbia.edu/",
   },
   {
     title: "Stock Trading",
@@ -194,14 +203,13 @@ export const pastProjectsData = [
     tags: ["HTML", "CSS", "PHP", "MySQL", "API"],
     imageUrl: creditDeals,
     url: "https://github.com/MiPlayer123/CreditDeals",
-  },
-  {
-    title: "VEX Robotics - 39K",
+  },{
+    title: "Personal Website",
     description:
-      "VEX Robotics team 39K Rest in Pieces. Led the team to be one of the top perorming teams in the world for 4+ years, working on all aspects of the robot.",
-    tags: ["VEX", "Robotics", "CAD", "C++", "PID"],
-    imageUrl: vex39k,
-    url: "https://www.youtube.com/vspuzzler",
+      "I created this website to showcase all my projects, big and small, and learn web dev!",
+    tags: ["React", "Next.js", "Tailwind", "TypeScript"],
+    imageUrl: mywebsite,
+    url: "https://github.com/MiPlayer123/mikul_personal_website",
   },
   {
     title: "6-Axis Robot Arm",
@@ -210,6 +218,15 @@ export const pastProjectsData = [
     tags: [],
     imageUrl: robotArm,
     url: "https://youtu.be/VcGS_pkGSuc",
+  },
+  
+  {
+    title: "VEX Robotics - 39K",
+    description:
+      "VEX Robotics team 39K Rest in Pieces. Led the team to be one of the top perorming teams in the world for 4+ years, working on all aspects of the robot.",
+    tags: ["VEX", "Robotics", "CAD", "C++", "PID"],
+    imageUrl: vex39k,
+    url: "https://www.youtube.com/vspuzzler",
   },
 ];
 
