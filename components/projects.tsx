@@ -25,7 +25,7 @@ export default function Projects() {
         <SectionHeading>
           <span className="mb-0 block">Past Projects</span>
         </SectionHeading>
-        <div className="past-projects grid sm:grid-cols-2 gap-5 scale-90 mt-0 mb-4">
+        <div className="past-projects grid sm:grid-cols-2 gap-5 scale-90 -mt-24 sm:-mt-20 mb-4">
           {
             pastProjectsData.map((project, index) => (
               <React.Fragment key={index}>
