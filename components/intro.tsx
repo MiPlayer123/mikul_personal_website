@@ -44,9 +44,10 @@ export default function Intro() {
                 Egleston Scholar majoring in{" "}
                 <span className="font-bold">Computer Science</span> and minoring in{" "}
                 <span className="font-bold">Economics</span> at<span className="font-bold"> Columbia University</span>. 
-                My passions are in{" "}
-                <span className="underline">CS, Robotics and AI</span>, and <span className="underline">finance</span>.
+                I love building. Check out my latest startup <a href="https://lucidrem.com" target="_blank" className="underline">Rem</a>.
             </motion.h1>
+            {/* My passions are in{" "}
+             <span className="underline">CS, Robotics and AI</span>, and <span className="underline">finance</span>. */}
 
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"

@@ -10,9 +10,9 @@ export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.1);
 
   return (
-    <section ref={ref} id="projects" className='scroll-mt-28 mb-5'>
+    <section ref={ref} id="projects" className='scroll-mt-28 mb-2'>
         <SectionHeading>Current Projects</SectionHeading>
-        <div className="current-projects grid sm:grid-cols-2 gap-4 scale-95 mb-20">
+        <div className="current-projects grid sm:grid-cols-2 gap-4 scale-95 mb-8">
           {
             projectsData.map((project, index) => (
               <React.Fragment key={index}>
@@ -22,8 +22,10 @@ export default function Projects() {
           }
 
         </div>  
-        <SectionHeading>Past Projects</SectionHeading>
-        <div className="past-projects grid sm:grid-cols-2 gap-5 scale-90">
+        <SectionHeading>
+          <span className="mb-0 block">Past Projects</span>
+        </SectionHeading>
+        <div className="past-projects grid sm:grid-cols-2 gap-5 scale-90 mt-0 mb-4">
           {
             pastProjectsData.map((project, index) => (
               <React.Fragment key={index}>

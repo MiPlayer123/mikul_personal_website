@@ -17,6 +17,7 @@ import vex39k from "@/public/39k.jpg";
 import pongirl from "@/public/pong_irl.png";
 import dash from "@/public/dash.png";
 import accumulator from "@/public/accumulator.png";
+import rem from "@/public/rem.png";
 
 export const links = [
   {
@@ -122,12 +123,12 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Dash - Startup",
+    title: "Rem - Startup",
     description:
-      "Co-founded with Samay to apply technology to protect families by develoiping a distraction detection system for drivers.",
-    tags: ["Startup", "Computer-Vision", "App Dev", "AI", ],
-    imageUrl: dash,
-    url: "https://dash-demo-web.vercel.app/",
+      "Rem is an AI-powered social dream journal that boosts mental health by helping you reflect, connect, and explore your subconscious through shared dream insights.",
+    tags: ["Supabase", "React", "Full Stack", "AI", "Design"],
+    imageUrl: rem,
+    url: "https://www.lucidrem.com/",
   },
   {
     title: "A²R Lab",
@@ -137,6 +138,9 @@ export const projectsData = [
     imageUrl: a2r_lab,
     url: "https://a2r-lab.org/",
   },
+];
+
+export const pastProjectsData = [
   {
     title: "HV Enclosure - FSAE",
     description:
@@ -146,16 +150,13 @@ export const projectsData = [
     url: "https://fsae.engineering.columbia.edu/",
   },
   {
-    title: "Stock Trading",
+    title: "Dash - Startup",
     description:
-      "Analyzing stocks programmatically to pinpoint the best moments for buying and selling strategically.",
-    tags: ["Python", "Data Analytics", "Stock Indicators", "PyTorch", "ML"],
-    imageUrl: stocktrading,
-    url: "",
+      "Co-founded with Samay to apply technology to protect families by develoiping a distraction detection system for drivers.",
+    tags: ["Startup", "Computer-Vision", "App Dev", "AI", ],
+    imageUrl: dash,
+    url: "https://dash-demo-web.vercel.app/",
   },
-];
-
-export const pastProjectsData = [
   {
     title: "Pong IRL",
     description:
@@ -163,6 +164,14 @@ export const pastProjectsData = [
     tags: ["Arduion", "Stepper", " Electronics", "C", "Engineering"],
     imageUrl: pongirl,
     url: "https://www.youtube.com/watch?v=HaI8qRW8Zmc",
+  },
+  {
+    title: "Stock Trading",
+    description:
+      "Analyzing stocks programmatically to pinpoint the best moments for buying and selling strategically.",
+    tags: ["Python", "Data Analytics", "Stock Indicators", "PyTorch", "ML"],
+    imageUrl: stocktrading,
+    url: "",
   },
   {
     title: "BYRDS",

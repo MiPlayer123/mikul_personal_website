@@ -20,7 +20,7 @@ export default function About() {
     >
         <SectionHeading>About me</SectionHeading>
 
-        <p className='mb-3 text-center'>An avid learner and passionate maker, I always want to make something new. 🙂</p>
+        <p className='mb-3 text-center'>Buidling the next greatest thing 🙂</p>
 
         <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>Passions</h2>
         <ul style={{textAlign: 'left', marginBottom:'2rem', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
@@ -47,18 +47,18 @@ export default function About() {
 
         <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>School Organizations</h2>
         <ul style={{textAlign: 'left', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
+            <li>CU <a href="https://www.curaaga.com/" className="links" target='_blank'>Raaga</a> - Events Chair</li>
             <li>Research @ The Accessible and Accelerated Robotics Lab 
-                <a href="https://a2r-lab.org/" className=" links" target='_blank'> (A²R Lab)</a>
+                <a href="https://a2r-lab.org/" className=" links" target='_blank'> (A²R Lab)</a>  - 2024-2025
                 .</li>
-            <li>Columbia University <a href="https://fsae.engineering.columbia.edu/" className="links" target='_blank'>Formula Racing</a> (HV Enclosure Lead)</li>
+            <li>Columbia University <a href="https://fsae.engineering.columbia.edu/" className="links" target='_blank'>Formula Racing</a> (HV Enclosure Lead) - 2023-2025</li>
             <li>Columbia University 
                 <a href="https://www.columbiaroboticsclub.com/" className="links" target='_blank'> Robotics Club </a>
-                 - Combat Robotics (battlebots)</li>
-            <li>Columbia Space Initiative</li>
+                 - Combat Robotics (battlebots) - 2023-2024</li>
             <li>
                 <a href="https://paragoninvestments.org/index.html" className="links" target='_blank'>Paragon Global Investment&apos;s </a>
                  Quant Team</li>
-            <li>CORE&apos;s Project Management Fellowship</li>
+            <li>CORE&apos;s Project Management Fellowship - 2024</li>
             <li>CUSP: <a href="https://www.engineering.columbia.edu/egleston-scholars/mikul-saravanan" className="links" target='_blank'>Egleston Scholar</a></li>
         </ul>
         {/*
