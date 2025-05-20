@@ -8,7 +8,7 @@ export default function VideoDropdown() {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <section className="mb-20 sm:mb-30">
+    <section className="mb-10 sm:mb-10">
       <div className="accordion items-center justify-center gap-2 text-lg text-black">
         <div className="flex justify-center">
         <button
