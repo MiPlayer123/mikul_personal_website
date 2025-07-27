@@ -7,6 +7,7 @@ import React from 'react'
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 import { FaYoutube } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 import { HiDownload } from 'react-icons/hi';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -44,7 +45,7 @@ export default function Intro() {
                 Egleston Scholar majoring in{" "}
                 <span className="font-bold">Computer Science</span> and minoring in{" "}
                 <span className="font-bold">Economics</span> at<span className="font-bold"> Columbia University</span>. 
-                I love building. Check out my latest startup <a href="https://lucidrem.com" target="_blank" className="underline">Rem</a>.
+                I love building. Check out my latest startup <a href="https://wagoo.ai" target="_blank" className="underline">Wagoo.ai</a>.
             </motion.h1>
             {/* My passions are in{" "}
              <span className="underline">CS, Robotics and AI</span>, and <span className="underline">finance</span>. */}
@@ -83,8 +84,36 @@ export default function Intro() {
                         LinkedIn <BsLinkedin className="opacity-80 group-hover:translate-y-1 transition" />
                 </a>
 
+                {/* Mobile: these are on same row | Desktop: part of the main flex-row */}
+                <div className="flex flex-row gap-5 sm:hidden">
+                    <a
+                    className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
+                    href="https://github.com/MiPlayer123"
+                    target="_blank"
+                    >
+                    <FaGithubSquare />
+                    </a>
+
+                    <a
+                    className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
+                    href="https://www.youtube.com/channel/UCxSVd73Vex8xgZ7rap3QPIw"
+                    target="_blank"
+                    >
+                    <FaYoutube />
+                    </a>
+
+                    <a
+                    className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                    href="https://x.com/MikulSaravanan"
+                    target="_blank"
+                    >
+                    <BsTwitterX />
+                    </a>
+                </div>
+                
+                {/* Desktop only versions */}
                 <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
+                className="hidden sm:flex bg-white p-4 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
                 href="https://github.com/MiPlayer123"
                 target="_blank"
                 >
@@ -92,11 +121,19 @@ export default function Intro() {
                 </a>
 
                 <a
-                className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
+                className="hidden sm:flex bg-white p-4 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60" 
                 href="https://www.youtube.com/channel/UCxSVd73Vex8xgZ7rap3QPIw"
                 target="_blank"
                 >
                 <FaYoutube />
+                </a>
+
+                <a
+                className="hidden sm:flex bg-white p-4 text-gray-700 items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+                href="https://x.com/MikulSaravanan"
+                target="_blank"
+                >
+                <BsTwitterX />
                 </a>
                 
             </motion.div>

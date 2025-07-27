@@ -18,6 +18,7 @@ import pongirl from "@/public/pong_irl.png";
 import dash from "@/public/dash.png";
 import accumulator from "@/public/accumulator.png";
 import rem from "@/public/rem.png";
+import wagoo from "@/public/wagoo.png";
 
 export const links = [
   {
@@ -47,6 +48,22 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+  {
+    title: "Co-Founder & CEO - Wagaoo",
+    location: "New York, NY",
+    description:
+      "Build the next generation of desktop and personal assistants.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - present",
+  },
+  {
+    title: "Founding Engineer - Conductor Labs",
+    location: "New York, NY",
+    description:
+      "Front-end and back-end for agent orchestration for climate and industrial processes generation.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - present",
+  },
   {
     title: "Prompt Engineering Intern - Rilla",
     location: "New York, NY",
@@ -123,6 +140,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Wagoo.ai - Startup",
+    description:
+      "Wagoo.ai is a startup that builds the next generation of desktop and personal assistants. Building Jarvis and the future of the operating system for AI.",
+    tags: ["Electron", "React", "Voice", "LLMs"],
+    imageUrl: wagoo,
+    url: "https://wagoo.ai",
+  },
+  {
     title: "Rem - Startup",
     description:
       "Rem is an AI-powered social dream journal that boosts mental health by helping you reflect, connect, and explore your subconscious through shared dream insights.",
@@ -130,6 +155,10 @@ export const projectsData = [
     imageUrl: rem,
     url: "https://www.lucidrem.com/",
   },
+];
+
+export const pastProjectsData = [
+  
   {
     title: "A²R Lab",
     description:
@@ -138,9 +167,6 @@ export const projectsData = [
     imageUrl: a2r_lab,
     url: "https://a2r-lab.org/",
   },
-];
-
-export const pastProjectsData = [
   {
     title: "HV Enclosure - FSAE",
     description:
