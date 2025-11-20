@@ -1,6 +1,3 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  speedInsights: true,
-};
+const nextConfig = {};
 export default nextConfig;
-//module.exports = nextConfig;

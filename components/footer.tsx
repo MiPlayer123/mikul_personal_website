@@ -1,6 +1,12 @@
+"use client";
+
 import React from 'react'
+import { usePathname } from "next/navigation";
 
 export default function Footer() {
+  const pathname = usePathname();
+  if (pathname === "/wild") return null;
+
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">
       <small className="mb-2 block text-xs">
