@@ -131,8 +131,8 @@ export default function WildPage() {
             <div className="max-w-4xl mx-auto border-4 border-white p-10 bg-black relative z-10">
                 <h2 className="text-5xl font-black mb-8 text-white">THE MISSION</h2>
                 <p className="text-xl leading-relaxed text-white">
-                    I don't just write code. I engineer systems. From <span className="text-[#0f0]">autonomous robots</span> to <span className="text-[#f0f]">financial algorithms</span>, 
-                    my goal is to push the boundaries of what's possible.
+                    I don&apos;t just write code. I engineer systems. From <span className="text-[#0f0]">autonomous robots</span> to <span className="text-[#f0f]">financial algorithms</span>, 
+                    my goal is to push the boundaries of what&apos;s possible.
                     <br/><br/>
                     Pioneering <span className="text-[#f0f]">Voice AI</span> and <span className="text-[#0f0]">Autonomous Agents</span> to redefine human-computer interaction.
                     <br/><br/>
