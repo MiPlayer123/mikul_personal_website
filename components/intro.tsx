@@ -4,11 +4,8 @@ import Image from "next/image";
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 import React from 'react'
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { FaGithubSquare } from 'react-icons/fa';
-import { FaYoutube } from "react-icons/fa";
-import { BsTwitterX } from "react-icons/bs";
-import { HiDownload } from 'react-icons/hi';
+import { BsArrowRight, BsLinkedin, BsTwitterX } from 'react-icons/bs';
+import { FaGithubSquare, FaYoutube } from 'react-icons/fa';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -19,6 +16,19 @@ export default function Intro() {
     
     return (
         <section ref={ref} id="home" className="mb-28 max-w-[46rem] text-center sm:mb-0 scroll-mt-[100rem]">
+            <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mb-8"
+            >
+                <Link 
+                    href="/wild" 
+                    className="inline-block text-xs font-mono font-bold tracking-widest text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-white/10 border border-gray-300 dark:border-white/20 px-4 py-2 rounded-full shadow-md hover:scale-105 hover:bg-gray-900 hover:text-white hover:border-gray-900 dark:hover:bg-white dark:hover:text-black dark:hover:border-white transition-all"
+                >
+                    [ ENTER_WILD_MODE ]
+                </Link>
+            </motion.div>
+
             <div className='flex items-center justify-center'>
                 <div className='relative'>
                     <motion.div 
@@ -32,7 +42,7 @@ export default function Intro() {
                         initial={{opacity: 0, scale: 0}}
                         animate={{opacity: 1, scale: 1}}
                         transition={{type: "spring", stiffness: 125, delay: .12, duration: 0.7}}
-                    >🙌</motion.span>
+                    >👋</motion.span>
                 </div>
             </div>
 
