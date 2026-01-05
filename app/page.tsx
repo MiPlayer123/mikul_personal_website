@@ -4,7 +4,7 @@ import Experience from "@/components/experience";
 import Intro from "@/components/intro";
 import Projects from "@/components/projects";
 import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
+// import Skills from "@/components/skills";
 import VideoDropdown from "@/components/video-dropdown";
 
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       <About />
       <Projects />
       <VideoDropdown />
-      <Skills />
+      {/* <Skills /> */}
       <Experience />
       <Contact />
     </main>

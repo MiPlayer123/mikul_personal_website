@@ -19,6 +19,8 @@ import dash from "@/public/dash.png";
 import accumulator from "@/public/accumulator.png";
 import rem from "@/public/rem.png";
 import wagoo from "@/public/wagoo.png";
+import wagooLending from "@/public/wagoo_lending.png";
+import einkDashboard from "@/public/eink_dashboard.png";
 
 export const links = [
   {
@@ -33,10 +35,10 @@ export const links = [
     name: "Projects",
     hash: "#projects",
   },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
+  // {
+  //   name: "Skills",
+  //   hash: "#skills",
+  // },
   {
     name: "Experience",
     hash: "#experience",
@@ -49,10 +51,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Co-Founder & CEO - Wagaoo",
+    title: "Member of Technical Staff - Deeptune",
     location: "New York, NY",
     description:
-      "Build the next generation of desktop and personal assistants.",
+      "First intern and early engineer building AI training gyms—simulation environments where AI agents practice real-world tasks to learn and improve over time.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - present",
+  },
+  {
+    title: "Co-Founder & CEO - Wagoo",
+    location: "New York, NY",
+    description:
+      "Build the next generation of desktop and personal assistants. -> Pivoted into Wagoo Lending",
     icon: React.createElement(CgWorkAlt),
     date: "2025 - present",
   },
@@ -140,12 +150,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Wagoo.ai - Startup",
+    title: "Wagoo - Startup",
     description:
-      "Wagoo.ai is a startup that builds the next generation of desktop and personal assistants. Building Jarvis and the future of the operating system for AI.",
+      "AI underwriting automation platform for lending teams. Reduces deal processing from 4 hours to under 3 minutes through AI processing.",
+    tags: ["AI", "Fintech", "Automation", "Underwriting"],
+    imageUrl: wagooLending,
+    url: "https://wagoo.ai",
+  },
+  {
+    title: "E-Ink Dashboard (In Progress)",
+    description:
+      "Color e-ink digital dashboard and picture frame for displaying calendars, weather, photos, and more with ultra-low power consumption.",
+    tags: ["E-Ink", "Raspberry Pi", "Python", "Hardware"],
+    imageUrl: einkDashboard,
+    url: "",
+  },
+  {
+    title: "Wagoo v0",
+    description:
+      "Original desktop assistant that pivoted into a voice-first personal assistant. Building Jarvis and the future of the operating system for AI.",
     tags: ["Electron", "React", "Voice", "LLMs"],
     imageUrl: wagoo,
-    url: "https://wagoo.ai",
+    url: "https://wagoo.ai/voice",
   },
   {
     title: "Rem - Startup",
