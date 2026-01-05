@@ -160,7 +160,7 @@ export const projectsData = [
   {
     title: "E-Ink Dashboard (In Progress)",
     description:
-      "Color e-ink digital dashboard and picture frame for displaying calendars, weather, photos, and more with ultra-low power consumption.",
+      "Color e-ink digital dashboard and picture frame for displaying calendars, weather, photos, and more.",
     tags: ["E-Ink", "Raspberry Pi", "Python", "Hardware"],
     imageUrl: einkDashboard,
     url: "",

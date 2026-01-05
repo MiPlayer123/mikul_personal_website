@@ -20,30 +20,13 @@ export default function About() {
     >
         <SectionHeading>About me</SectionHeading>
 
-        <p className='mb-3 text-center'>Buidling the next greatest thing 🙂</p>
+        <p className='mb-3 text-center'>Building the next greatest thing 🙂</p>
 
-        <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>Passions</h2>
-        <ul style={{textAlign: 'left', marginBottom:'2rem', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-            <li>Developing technology with a real-world impact, highlighted by my air cleaning robot project which is 
-                <a href="https://patents.google.com/patent/US20220390135A1/" className="links" target='_blank'> patent pending </a>
-                and <a href="https://doi.org/10.36838/v5i1.17" className="links" target='_blank'>published</a>
-            </li>
-            <li>Contributing to the field of Audio Forensics through 
-                <a href="https://link.springer.com/article/10.1007/s10462-023-10539-8" className="links" target='_blank'> published research</a>
-            </li>
-            <li>Automating and enhancing everyday life, from smartifying my home to attending 
-            <a href="https://devpost.com/MiPlayer123?ref_content=user-portfolio&ref_feature=portfolio" className="links" target='_blank'> hackathons</a>
-            </li>
-            <li>Exploring the intersection of technology and finance</li>
-        </ul>
-
-        <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>Hobbies</h2>
-        <ul style={{textAlign: 'left', marginBottom:'2rem', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
-            <li>Hanging out with friends</li>
-            <li>Exploring nature and national parks</li>
-            <li>Working out at the gym</li>
-            <li>Working on new projects and learning</li>
-        </ul>
+        <p className='mb-5'>
+          From a <a href="https://patents.google.com/patent/US20220390135A1/" className="links" target='_blank'>patented</a> air cleaning robot to <a href="https://link.springer.com/article/10.1007/s10462-023-10539-8" className="links" target='_blank'>audio forensics research</a> to AI underwriting software, I turn ideas into products.
+          Currently at <a href="https://deeptune.com" className="links" target='_blank'>Deeptune</a> creating training environments for AI agents, while running <a href="https://wagoo.ai" className="links" target='_blank'>Wagoo</a> on the side.
+          Studying CS and Econ at Columbia. Ex <a href="https://devpost.com/MiPlayer123?ref_content=user-portfolio&ref_feature=portfolio" className="links" target='_blank'>hacker</a>, I hit the gym, explore the outdoors, and DJ on the side.
+        </p>
 
         <h2 style={{ fontSize: '1.3rem', fontWeight: 'bold' }}>School Organizations</h2>
         <ul style={{textAlign: 'left', paddingLeft: '1.5rem', listStyleType: 'disc' }}>
