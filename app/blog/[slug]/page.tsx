@@ -49,18 +49,20 @@ export default function Post({ params }: Props) {
         </Link>
 
         <article>
-          {/* Post Header */}
-          <header className="mb-10 sm:mb-12">
-            <time className="text-sm text-gray-500 dark:text-gray-500 mb-4 block">
-              {formatDate(post.date)}
-            </time>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
+          {/* Post Header - Centered */}
+          <header className="text-center mb-12 sm:mb-16">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-4">
               {post.title}
             </h1>
+            {post.excerpt && (
+              <p className="text-lg sm:text-xl italic text-gray-600 dark:text-gray-400 mb-6">
+                {post.excerpt}
+              </p>
+            )}
+            <p className="text-sm text-gray-500 dark:text-gray-500">
+              Mikul Saravanan | {formatDateShort(post.date)}
+            </p>
           </header>
-
-          {/* Divider */}
-          <div className="w-16 h-px bg-gray-200 dark:bg-gray-700 mb-10 sm:mb-12" />
 
           {/* Post Content */}
           <div className="blog-prose">
@@ -86,11 +88,10 @@ export default function Post({ params }: Props) {
   );
 }
 
-function formatDate(dateString: string): string {
+function formatDateShort(dateString: string): string {
   const date = new Date(dateString);
   return date.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
-    day: "numeric",
   });
 }
