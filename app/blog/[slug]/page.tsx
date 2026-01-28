@@ -6,11 +6,12 @@ import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
   if (!post) {
     return {
       title: "Post Not Found",
@@ -29,8 +30,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function Post({ params }: Props) {
-  const post = getPostBySlug(params.slug);
+export default async function Post({ params }: Props) {
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();

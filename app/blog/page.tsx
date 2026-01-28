@@ -27,7 +27,7 @@ export default function Blog() {
         {/* Blog Header */}
         <header className="mb-10 sm:mb-14">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4">
-            Mikul's Blog
+            Mikul&apos;s Blog
           </h1>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-400 max-w-2xl">
             Thoughts on tech, robotics, startups, and everything in between.
