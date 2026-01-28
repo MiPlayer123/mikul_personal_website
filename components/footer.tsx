@@ -5,7 +5,8 @@ import { usePathname } from "next/navigation";
 
 export default function Footer() {
   const pathname = usePathname();
-  if (pathname === "/wild") return null;
+  // Hide footer on wild mode and blog pages
+  if (pathname === "/wild" || pathname.startsWith("/blog")) return null;
 
   return (
     <footer className="mb-10 px-4 text-center text-gray-500">

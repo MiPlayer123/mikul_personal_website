@@ -22,3 +22,80 @@ html.dark {
 body:has(.wild-mode-active) {
   padding-top: 0 !important;
 }
+
+/* Blog Mode Override - Clean solid background */
+body:has(.blog-layout) {
+  padding-top: 0 !important;
+}
+
+/* Hide gradient blobs on blog pages */
+body:has(.blog-layout) > div:first-of-type,
+body:has(.blog-layout) > div:nth-of-type(2) {
+  display: none !important;
+}
+
+/* Blog Typography */
+.blog-prose {
+  @apply text-gray-800 dark:text-gray-200 leading-relaxed;
+}
+
+.blog-prose h1 {
+  @apply text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-6 leading-tight;
+}
+
+.blog-prose h2 {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white mt-10 mb-4;
+}
+
+.blog-prose h3 {
+  @apply text-xl font-semibold text-gray-900 dark:text-white mt-8 mb-3;
+}
+
+.blog-prose p {
+  @apply mb-5 text-base sm:text-lg leading-relaxed;
+}
+
+.blog-prose ul,
+.blog-prose ol {
+  @apply mb-5 pl-6;
+}
+
+.blog-prose li {
+  @apply mb-2 text-base sm:text-lg;
+}
+
+.blog-prose ul li {
+  @apply list-disc;
+}
+
+.blog-prose ol li {
+  @apply list-decimal;
+}
+
+.blog-prose a {
+  @apply text-blue-600 dark:text-blue-400 hover:underline;
+}
+
+.blog-prose blockquote {
+  @apply border-l-4 border-gray-300 dark:border-gray-600 pl-4 italic my-6 text-gray-600 dark:text-gray-400;
+}
+
+.blog-prose code {
+  @apply bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.blog-prose pre {
+  @apply bg-gray-900 dark:bg-gray-950 text-gray-100 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.blog-prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.blog-prose img {
+  @apply rounded-lg my-6 w-full;
+}
+
+.blog-prose hr {
+  @apply my-8 border-gray-200 dark:border-gray-700;
+}
