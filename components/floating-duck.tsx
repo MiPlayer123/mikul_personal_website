@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useCallback } from "react";
+import React, { useEffect, useRef, useCallback, useState } from "react";
 
 const DUCK_SIZE = 45;
 const BOB_AMPLITUDE = 5;
@@ -44,6 +44,8 @@ export default function FloatingDuck() {
   const viewportRef = useRef({ w: 0, h: 0 });
   const scrollRef = useRef(0);
   const rafRef = useRef<number>(0);
+  const [dismissed, setDismissed] = useState(false);
+  const tapTimesRef = useRef<number[]>([]);
 
   const initPhysics = useCallback((): PhysicsState => {
     const w = window.innerWidth;
@@ -300,7 +302,20 @@ export default function FloatingDuck() {
     (e.target as Element).releasePointerCapture(e.pointerId);
 
     if (!p.dragMoved) {
-      // Tap — do a flip!
+      // Track tap times for double-click dismiss
+      const now = performance.now();
+      tapTimesRef.current.push(now);
+      // Keep only taps within last 400ms
+      tapTimesRef.current = tapTimesRef.current.filter((t) => now - t < 400);
+
+      if (tapTimesRef.current.length >= 2) {
+        // Double tap — dismiss with fade out
+        setDismissed(true);
+        tapTimesRef.current = [];
+        return;
+      }
+
+      // Single tap — do a flip!
       p.isFlipping = true;
       p.flipProgress = 0;
       p.targetRotation = p.rotation + 360;
@@ -322,6 +337,22 @@ export default function FloatingDuck() {
 
     p.phase = "idle";
   }, []);
+
+  const [hidden, setHidden] = useState(false);
+
+  // Fade out then unmount
+  useEffect(() => {
+    if (!dismissed || !containerRef.current) return;
+    containerRef.current.style.transition = "opacity 0.6s ease-out";
+    containerRef.current.style.opacity = "0";
+    const timeout = setTimeout(() => {
+      cancelAnimationFrame(rafRef.current);
+      setHidden(true);
+    }, 600);
+    return () => clearTimeout(timeout);
+  }, [dismissed]);
+
+  if (hidden) return null;
 
   return (
     <div

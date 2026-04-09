@@ -18,8 +18,20 @@ export async function generateMetadata({ params }: Props) {
     };
   }
   return {
-    title: `${post.title} | Mikul`,
+    title: post.title,
     description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.date,
+      authors: ["Mikul Saravanan"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+    },
   };
 }
 
