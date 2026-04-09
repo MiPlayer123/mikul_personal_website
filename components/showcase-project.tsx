@@ -35,9 +35,9 @@ export default function ShowcaseProject({
         rel="noopener noreferrer"
         className="block group h-full"
       >
-        <div className="bg-gray-100 border border-black/5 rounded-lg overflow-hidden hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 h-full flex flex-col">
+        <div className="bg-gray-100 border border-black/5 rounded-lg overflow-hidden hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 h-full flex flex-row">
           {imageUrl && (
-            <div className="relative w-full h-36">
+            <div className="relative w-28 min-h-full flex-shrink-0">
               <Image
                 src={imageUrl}
                 alt={title}

@@ -21,6 +21,8 @@ import rem from "@/public/rem.png";
 import wagoo from "@/public/wagoo.png";
 import wagooLending from "@/public/wagoo_lending.png";
 import einkDashboard from "@/public/eink_dashboard.jpeg";
+import setbuilder from "@/public/setbuilder.png";
+import constellationClock from "@/public/constellation_clock.png";
 
 export const links = [
   {
@@ -310,14 +312,14 @@ export const showcaseData: ShowcaseItem[] = [
     description:
       "DJ set builder with 9K+ tracks, filterable by BPM, key, energy, and mood.",
     url: "https://set-builder.vercel.app/",
-    imageUrl: null,
+    imageUrl: setbuilder,
   },
   {
     title: "Constellation Clock",
     description:
       "Abstract constellation clock visualization built with p5.js.",
-    url: "https://github.com/MiPlayer123/Constellation-Clock",
-    imageUrl: null,
+    url: "https://miplayer123.github.io/Constellation-Clock/",
+    imageUrl: constellationClock,
   },
   {
     title: "VANS",
