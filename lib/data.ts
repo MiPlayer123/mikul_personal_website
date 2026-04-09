@@ -295,6 +295,39 @@ export const pastProjectsData = [
   },
 ];
 
+import { StaticImageData } from "next/image";
+
+export type ShowcaseItem = {
+  title: string;
+  description: string;
+  url: string;
+  imageUrl: StaticImageData | null;
+};
+
+export const showcaseData: ShowcaseItem[] = [
+  {
+    title: "SetBuilder",
+    description:
+      "DJ set builder with 9K+ tracks, filterable by BPM, key, energy, and mood.",
+    url: "https://set-builder.vercel.app/",
+    imageUrl: null,
+  },
+  {
+    title: "Constellation Clock",
+    description:
+      "Abstract constellation clock visualization built with p5.js.",
+    url: "https://github.com/MiPlayer123/Constellation-Clock",
+    imageUrl: null,
+  },
+  {
+    title: "VANS",
+    description:
+      "Deep learning system for solving visual IQ puzzles (Raven's Progressive Matrices) at human-level accuracy.",
+    url: "https://github.com/MiPlayer123/VANS",
+    imageUrl: null,
+  },
+];
+
 export const skillsData = [
   "Python",
   "Java",
