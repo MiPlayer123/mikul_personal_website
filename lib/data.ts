@@ -20,7 +20,7 @@ import accumulator from "@/public/accumulator.png";
 import rem from "@/public/rem.png";
 import wagoo from "@/public/wagoo.png";
 import wagooLending from "@/public/wagoo_lending.png";
-import einkDashboard from "@/public/eink_dashboard.png";
+import einkDashboard from "@/public/eink_dashboard.jpeg";
 
 export const links = [
   {
@@ -162,7 +162,7 @@ export const projectsData = [
     url: "https://wagoo.ai",
   },
   {
-    title: "E-Ink Dashboard (In Progress)",
+    title: "E-Ink Dashboard",
     description:
       "Color e-ink digital dashboard and picture frame for displaying calendars, weather, photos, and more.",
     tags: ["E-Ink", "Raspberry Pi", "Python", "Hardware"],
