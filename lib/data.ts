@@ -337,6 +337,13 @@ export const showcaseData: ShowcaseItem[] = [
     url: "https://github.com/MiPlayer123/VANS",
     imageUrl: null,
   },
+  {
+    title: "Digital Song of the Future",
+    description:
+      "Perihelion Drift: a 3:20 melodic-house track synthesized from scratch in Python. Just raw math turned into music.",
+    url: "https://github.com/MiPlayer123/digital-song-of-the-future",
+    imageUrl: null,
+  },
 ];
 
 export const skillsData = [
