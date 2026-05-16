@@ -23,6 +23,7 @@ import wagooLending from "@/public/wagoo_lending.png";
 import einkDashboard from "@/public/eink_dashboard.jpeg";
 import setbuilder from "@/public/setbuilder.png";
 import constellationClock from "@/public/constellation_clock.png";
+import datavis from "@/public/datavis.png";
 
 export const links = [
   {
@@ -164,6 +165,14 @@ export const projectsData = [
     url: "https://wagoo.ai",
   },
   {
+    title: "Turing Test Visualization",
+    description:
+      "Scrollytelling data viz across 486 conversations exploring how LLMs communicate with humans and other AIs. Thesis: the harder an AI tries to seem human, the more it gives itself away.",
+    tags: ["Python", "D3.js", "Three.js", "LLMs", "Data Viz"],
+    imageUrl: datavis,
+    url: "https://miplayer123.github.io/turing-test-data-pipeline/",
+  },
+  {
     title: "E-Ink Dashboard",
     description:
       "Color e-ink digital dashboard and picture frame for displaying calendars, weather, photos, and more.",
@@ -179,18 +188,10 @@ export const projectsData = [
     imageUrl: wagoo,
     url: "https://wagoo.ai/voice",
   },
-  {
-    title: "Rem - Startup",
-    description:
-      "Rem is an AI-powered social dream journal that boosts mental health by helping you reflect, connect, and explore your subconscious through shared dream insights.",
-    tags: ["Supabase", "React", "Full Stack", "AI", "Design"],
-    imageUrl: rem,
-    url: "https://www.lucidrem.com/",
-  },
 ];
 
 export const pastProjectsData = [
-  
+
   {
     title: "A²R Lab",
     description:
@@ -198,6 +199,14 @@ export const pastProjectsData = [
     tags: ["Python", "C", "Robotics", "Motion Planning", "Algorithms"],
     imageUrl: a2r_lab,
     url: "https://a2r-lab.org/",
+  },
+  {
+    title: "Rem - Startup",
+    description:
+      "Rem is an AI-powered social dream journal that boosts mental health by helping you reflect, connect, and explore your subconscious through shared dream insights.",
+    tags: ["Supabase", "React", "Full Stack", "AI", "Design"],
+    imageUrl: rem,
+    url: "https://www.lucidrem.com/",
   },
   {
     title: "HV Enclosure - FSAE",
