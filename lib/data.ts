@@ -331,7 +331,7 @@ export const showcaseData: ShowcaseItem[] = [
     imageUrl: constellationClock,
   },
   {
-    title: "VANS",
+    title: "VANS: Visual Analogy Network Solver",
     description:
       "Deep learning system for solving visual IQ puzzles (Raven's Progressive Matrices) at human-level accuracy.",
     url: "https://github.com/MiPlayer123/VANS",

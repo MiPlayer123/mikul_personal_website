@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <section ref={ref} id="projects" className='scroll-mt-28 mb-0'>
         <SectionHeading>Current Projects</SectionHeading>
-        <div className="current-projects grid lg:grid-cols-2 gap-4 scale-95 mb-8 max-w-xl lg:max-w-none mx-auto">
+        <div className="current-projects grid lg:grid-cols-2 gap-4 mb-8 max-w-xl lg:max-w-[85rem] mx-auto">
           {
             projectsData.map((project, index) => (
               <React.Fragment key={index}>
@@ -26,7 +26,7 @@ export default function Projects() {
         <SectionHeading>
           <span className="mb-0 block">Past Projects</span>
         </SectionHeading>
-        <div className="past-projects grid lg:grid-cols-2 gap-5 scale-90 -mt-24 lg:-mt-20 mb-0 max-w-xl lg:max-w-none mx-auto">
+        <div className="past-projects grid lg:grid-cols-2 gap-5 mb-0 max-w-xl lg:max-w-[85rem] mx-auto">
           {
             pastProjectsData.map((project, index) => (
               <React.Fragment key={index}>
@@ -36,10 +36,8 @@ export default function Projects() {
           }
 
         </div>
-        <div className="-mt-16 lg:-mt-12">
-          <SectionHeading>Showcase</SectionHeading>
-        </div>
-        <div className="showcase-projects grid sm:grid-cols-2 lg:grid-cols-3 gap-4 scale-95 mb-16 max-w-xl lg:max-w-none mx-auto">
+        <SectionHeading>Showcase</SectionHeading>
+        <div className="showcase-projects grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 max-w-xl lg:max-w-[85rem] mx-auto">
           {showcaseData.map((project, index) => (
             <React.Fragment key={index}>
               <ShowcaseProject {...project} />
