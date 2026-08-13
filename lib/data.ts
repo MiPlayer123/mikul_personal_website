@@ -24,6 +24,7 @@ import einkDashboard from "@/public/eink_dashboard.jpeg";
 import setbuilder from "@/public/setbuilder.png";
 import constellationClock from "@/public/constellation_clock.png";
 import datavis from "@/public/datavis.png";
+import keel from "@/public/keel.png";
 
 export const links = [
   {
@@ -165,6 +166,14 @@ export const projectsData = [
     url: "https://wagoo.ai",
   },
   {
+    title: "Keel Financial OS",
+    description:
+      "AI-first personal and entity finance system of record. A deterministic double-entry ledger where AI suggests and never silently acts—every change waits for your approval.",
+    tags: ["Next.js", "AI", "Fintech", "Ledger", "Plaid"],
+    imageUrl: keel,
+    url: "https://keel.mikulsaravanan.com",
+  },
+  {
     title: "Turing Test Visualization",
     description:
       "Scrollytelling data viz across 486 conversations exploring how LLMs communicate with humans and other AIs. Thesis: the harder an AI tries to seem human, the more it gives itself away.",
@@ -180,6 +189,9 @@ export const projectsData = [
     imageUrl: einkDashboard,
     url: "",
   },
+];
+
+export const pastProjectsData = [
   {
     title: "Wagoo v0",
     description:
@@ -188,9 +200,6 @@ export const projectsData = [
     imageUrl: wagoo,
     url: "https://wagoo.ai/voice",
   },
-];
-
-export const pastProjectsData = [
 
   {
     title: "A²R Lab",
