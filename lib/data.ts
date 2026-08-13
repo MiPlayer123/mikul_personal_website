@@ -168,7 +168,7 @@ export const projectsData = [
   {
     title: "Keel Financial OS",
     description:
-      "AI-first personal and entity finance system of record. A deterministic double-entry ledger where AI suggests and never silently acts—every change waits for your approval.",
+      "AI-first personal and entity finance system of record. A deterministic double-entry ledger where AI suggests and never silently acts. Every change waits for your approval.",
     tags: ["Next.js", "AI", "Fintech", "Ledger", "Plaid"],
     imageUrl: keel,
     url: "https://keel.mikulsaravanan.com",
