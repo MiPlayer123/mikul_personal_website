@@ -8,7 +8,12 @@ import ParksList from "@/components/travel/parks-list";
 import TripTimeline from "@/components/travel/trip-timeline";
 import TravelLockForm from "@/components/travel/travel-lock-form";
 import { isTravelUnlocked } from "@/lib/travel-lock";
-import { visitedStates, visitedCountries, globeMarkers } from "@/lib/travel";
+import {
+  visitedStates,
+  visitedCountries,
+  smallCountryMarkers,
+  globeMarkers,
+} from "@/lib/travel";
 
 // Render per-request so the TRAVEL_PASSWORD cookie gate is always evaluated,
 // even when the env var is added after a build.
@@ -48,7 +53,7 @@ export default async function TravelPage() {
       {/* World */}
       <section className="w-full max-w-4xl mt-20">
         <SectionHeading>Around the world</SectionHeading>
-        <WorldMap visited={visitedCountries} />
+        <WorldMap visited={visitedCountries} markers={smallCountryMarkers} />
       </section>
 
       {/* Trips */}

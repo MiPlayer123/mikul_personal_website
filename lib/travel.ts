@@ -24,35 +24,88 @@ export type ParkVisit = {
 };
 
 // US states visited — two-letter postal codes ("DC" is shown on the map but
-// not counted toward the 50).
+// not counted toward the 50). Currently: all 50 except KS, DE, OK.
 export const visitedStates = [
-  "CA",
-  "WA",
-  "OR",
-  "NV",
+  "AL",
+  "AK",
   "AZ",
-  "UT",
-  "NY",
-  "NJ",
-  "MA",
+  "AR",
+  "CA",
+  "CO",
+  "CT",
   "FL",
-  "TX",
+  "GA",
+  "HI",
+  "ID",
   "IL",
-  "VA",
+  "IN",
+  "IA",
+  "KY",
+  "LA",
+  "ME",
   "MD",
-  "DC",
+  "MA",
+  "MI",
+  "MN",
+  "MS",
+  "MO",
+  "MT",
+  "NE",
+  "NV",
+  "NH",
+  "NJ",
+  "NM",
+  "NY",
+  "NC",
+  "ND",
+  "OH",
+  "OR",
+  "PA",
+  "RI",
+  "SC",
+  "SD",
+  "TN",
+  "TX",
+  "UT",
+  "VT",
+  "VA",
+  "WA",
+  "WV",
+  "WI",
+  "WY",
 ] as const;
 
 // Countries visited — names must match the world map's country names
-// (world-atlas), e.g. "United States of America", "United Kingdom",
-// "South Korea", "Czechia".
+// (world-atlas), e.g. "United States of America", "Dominican Rep.".
+// England, Scotland, and Wales are one entry: "United Kingdom".
 export const visitedCountries = [
   "United States of America",
   "India",
-  "France",
-  "United Kingdom",
   "Canada",
+  "Singapore",
+  "Malaysia",
+  "United Arab Emirates",
+  "France",
+  "Portugal",
+  "Peru",
+  "Switzerland",
+  "Greece",
+  "United Kingdom",
   "Mexico",
+  "Bahamas",
+  "Costa Rica",
+  "Brazil",
+  "Argentina",
+  "Uruguay",
+  "Antarctica",
+  "Dominican Rep.",
+  "Jamaica",
+] as const;
+
+// Visited countries too small to appear on the 110m world map — drawn as
+// marker dots instead of filled shapes.
+export const smallCountryMarkers = [
+  { name: "Singapore", lat: 1.35, lng: 103.82 },
 ] as const;
 
 export const visitedParks: readonly ParkVisit[] = [
@@ -164,7 +217,9 @@ export const ALL_NATIONAL_PARKS: readonly { name: string; states: string }[] = [
 ];
 
 // Derived values used across the page
-export const stateCount = visitedStates.filter((s) => s !== "DC").length;
+export const stateCount = visitedStates.filter(
+  (s: string) => s !== "DC"
+).length;
 export const countryCount = visitedCountries.length;
 export const parkCount = visitedParks.length;
 export const globeMarkers = trips.flatMap((trip) =>
