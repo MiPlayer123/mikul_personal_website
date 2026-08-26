@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/wild"],
+        disallow: ["/wild", "/travel"],
       },
     ],
     sitemap: "https://mikulsaravanan.com/sitemap.xml",
