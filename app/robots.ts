@@ -6,6 +6,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
+        // /travel is intentionally not disallowed: crawlers must be able to
+        // fetch it to see its noindex metadata (app/travel/layout.tsx).
         disallow: ["/wild"],
       },
     ],

@@ -55,6 +55,10 @@ export const links = [
     name: "Blog",
     hash: "/blog",
   },
+  {
+    name: "Travel",
+    hash: "/travel",
+  },
 ] as const;
 
 export const experiencesData = [
