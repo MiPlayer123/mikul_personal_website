@@ -15,6 +15,7 @@ import {
   smallCountryMarkers,
   globeMarkers,
   beliUrl,
+  beliHandle,
 } from "@/lib/travel";
 
 // Render per-request so the TRAVEL_PASSWORD cookie gate is always evaluated,
@@ -35,14 +36,14 @@ export default async function TravelPage() {
           <TravelStats />
           {beliUrl && (
             <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-              Eating my way through them too —{" "}
+              Eating my way through them too:{" "}
               <a
                 href={beliUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium text-blue-600 dark:text-blue-400 hover:underline"
               >
-                find me on Beli →
+                @{beliHandle} on Beli →
               </a>
             </p>
           )}

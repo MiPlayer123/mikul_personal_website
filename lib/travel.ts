@@ -107,9 +107,9 @@ export const smallCountryMarkers = [
   { name: "Singapore", lat: 1.35, lng: 103.82 },
 ] as const;
 
-// TODO(mikul): paste your Beli profile URL to show a food link under the
-// hero stats (hidden while empty).
-export const beliUrl = "";
+// Beli profile, linked under the hero stats (hidden if beliUrl is empty).
+export const beliUrl = "https://beliapp.co/lists/MiPlaya";
+export const beliHandle = "MiPlaya";
 
 // Display metadata for the country list: map-dataset name -> label + ISO
 // 3166-1 alpha-2 code (used to derive the flag emoji).
