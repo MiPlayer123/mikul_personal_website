@@ -88,7 +88,6 @@ export const visitedCountries = [
   "France",
   "Portugal",
   "Peru",
-  "Switzerland",
   "Greece",
   "United Kingdom",
   "Mexico",
@@ -107,6 +106,35 @@ export const visitedCountries = [
 export const smallCountryMarkers = [
   { name: "Singapore", lat: 1.35, lng: 103.82 },
 ] as const;
+
+// Beli profile, linked under the hero stats (hidden if beliUrl is empty).
+export const beliUrl = "https://beliapp.co/lists/MiPlaya";
+export const beliHandle = "MiPlaya";
+
+// Display metadata for the country list: map-dataset name -> label + ISO
+// 3166-1 alpha-2 code (used to derive the flag emoji).
+export const countryMeta: Record<string, { label: string; iso2: string }> = {
+  "United States of America": { label: "United States", iso2: "US" },
+  India: { label: "India", iso2: "IN" },
+  Canada: { label: "Canada", iso2: "CA" },
+  Singapore: { label: "Singapore", iso2: "SG" },
+  Malaysia: { label: "Malaysia", iso2: "MY" },
+  "United Arab Emirates": { label: "UAE", iso2: "AE" },
+  France: { label: "France", iso2: "FR" },
+  Portugal: { label: "Portugal", iso2: "PT" },
+  Peru: { label: "Peru", iso2: "PE" },
+  Greece: { label: "Greece", iso2: "GR" },
+  "United Kingdom": { label: "United Kingdom", iso2: "GB" },
+  Mexico: { label: "Mexico", iso2: "MX" },
+  Bahamas: { label: "Bahamas", iso2: "BS" },
+  "Costa Rica": { label: "Costa Rica", iso2: "CR" },
+  Brazil: { label: "Brazil", iso2: "BR" },
+  Argentina: { label: "Argentina", iso2: "AR" },
+  Uruguay: { label: "Uruguay", iso2: "UY" },
+  Antarctica: { label: "Antarctica", iso2: "AQ" },
+  "Dominican Rep.": { label: "Dominican Republic", iso2: "DO" },
+  Jamaica: { label: "Jamaica", iso2: "JM" },
+};
 
 export const visitedParks: readonly ParkVisit[] = [
   { name: "Yosemite", year: 2025 },

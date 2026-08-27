@@ -10,6 +10,11 @@ type TravelGlobeProps = {
 
 export default function TravelGlobe({ markers }: TravelGlobeProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pointerStart = useRef<number | null>(null);
+  const dragOffset = useRef(0);
+  const dragOffsetAtStart = useRef(0);
+  // renders a dragged frame when no animation loop is running (reduced motion)
+  const renderDrag = useRef<() => void>(() => {});
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -20,7 +25,7 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
       "(prefers-reduced-motion: reduce)"
     ).matches;
     const dark = theme === "dark";
-    let phi = 0;
+    let autoPhi = 0;
 
     const globe = createGlobe(canvas, {
       devicePixelRatio: 2,
@@ -50,10 +55,21 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
     window.addEventListener("resize", onResize);
 
     let frame = 0;
-    if (!reducedMotion) {
+    if (reducedMotion) {
+      // no idle loop: the globe stays static and re-renders only on drag,
+      // after a short warm-up while the map texture initializes
+      renderDrag.current = () =>
+        globe.update({ phi: autoPhi + dragOffset.current });
+      let warmupFrames = 0;
+      const warmup = () => {
+        renderDrag.current();
+        if (++warmupFrames < 30) frame = requestAnimationFrame(warmup);
+      };
+      frame = requestAnimationFrame(warmup);
+    } else {
       const spin = () => {
-        phi += 0.003;
-        globe.update({ phi });
+        if (pointerStart.current === null) autoPhi += 0.003;
+        globe.update({ phi: autoPhi + dragOffset.current });
         frame = requestAnimationFrame(spin);
       };
       frame = requestAnimationFrame(spin);
@@ -64,6 +80,7 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
 
     return () => {
       cancelAnimationFrame(frame);
+      renderDrag.current = () => {};
       globe.destroy();
       window.removeEventListener("resize", onResize);
     };
@@ -73,8 +90,27 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
     <div className="mx-auto w-full max-w-[24rem] aspect-square">
       <canvas
         ref={canvasRef}
-        className="h-full w-full opacity-0 transition-opacity duration-700"
-        aria-label="Rotating globe with markers on visited places"
+        className="h-full w-full opacity-0 transition-opacity duration-700 cursor-grab active:cursor-grabbing"
+        style={{ touchAction: "pan-y pinch-zoom" }}
+        aria-label="Rotating globe with markers on visited places; drag to spin"
+        onPointerDown={(e) => {
+          pointerStart.current = e.clientX;
+          dragOffsetAtStart.current = dragOffset.current;
+          e.currentTarget.setPointerCapture(e.pointerId);
+        }}
+        onPointerMove={(e) => {
+          if (pointerStart.current === null) return;
+          dragOffset.current =
+            dragOffsetAtStart.current +
+            (e.clientX - pointerStart.current) / 120;
+          renderDrag.current();
+        }}
+        onPointerUp={() => {
+          pointerStart.current = null;
+        }}
+        onPointerCancel={() => {
+          pointerStart.current = null;
+        }}
       />
     </div>
   );
