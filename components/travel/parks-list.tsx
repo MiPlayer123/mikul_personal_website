@@ -10,11 +10,8 @@ export default function ParksList() {
 
   return (
     <div>
-      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-        <span className="font-semibold text-gray-900 dark:text-gray-100">
-          {visited.length} of {ALL_NATIONAL_PARKS.length} national parks
-        </span>{" "}
-        — most recent first
+      <p className="text-sm font-semibold text-gray-900 dark:text-gray-100 mb-3">
+        {visited.length} of {ALL_NATIONAL_PARKS.length} national parks
       </p>
 
       <ul className="flex flex-col gap-2">
@@ -29,7 +26,18 @@ export default function ParksList() {
               key={park.name}
               className="flex items-center gap-3 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800 px-4 py-2.5 text-sm shadow-sm"
             >
-              <span className="h-2 w-2 rounded-full bg-emerald-500 dark:bg-emerald-400 flex-none" />
+              <svg
+                className="h-4 w-4 text-blue-600 dark:text-blue-400 flex-none"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M4 10.5l4 4 8-9" />
+              </svg>
               <span className="font-medium">{park.name}</span>
               <span className="text-gray-400 dark:text-gray-500 text-xs">
                 {park.states}

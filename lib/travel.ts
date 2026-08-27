@@ -117,32 +117,24 @@ export const visitedParks: readonly ParkVisit[] = [
 
 export const trips: readonly Trip[] = [
   {
-    title: "Pacific Northwest loop",
-    date: "2025-06",
-    description:
-      "Seattle to Olympic to Portland. Ferry across the Sound, one very wet hike in the Hoh Rainforest.",
-    tags: ["WA", "OR"],
+    title: "Great Britain tour",
+    date: "2026-08",
+    description: "England, Scotland, and Wales.",
+    tags: ["England", "Scotland", "Wales"],
     places: [
-      { name: "Seattle", lat: 47.61, lng: -122.33 },
-      { name: "Portland", lat: 45.52, lng: -122.68 },
+      { name: "London", lat: 51.51, lng: -0.13 },
+      { name: "Edinburgh", lat: 55.95, lng: -3.19 },
+      { name: "Cardiff", lat: 51.48, lng: -3.18 },
     ],
   },
   {
-    title: "India",
-    date: "2024-12",
-    description:
-      "Three weeks between Chennai and the hill stations. Family, filter coffee, and far too much food.",
-    tags: ["India", "Chennai"],
-    places: [{ name: "Chennai", lat: 13.08, lng: 80.27 }],
-  },
-  {
-    title: "Paris + London",
-    date: "2023-07",
-    description: "A week split across the Channel. Museums by day, trains by night.",
-    tags: ["France", "United Kingdom"],
+    title: "Greece",
+    date: "2026-03",
+    description: "Athens and Santorini.",
+    tags: ["Greece", "Athens", "Santorini"],
     places: [
-      { name: "Paris", lat: 48.86, lng: 2.35 },
-      { name: "London", lat: 51.51, lng: -0.13 },
+      { name: "Athens", lat: 37.98, lng: 23.73 },
+      { name: "Santorini", lat: 36.39, lng: 25.46 },
     ],
   },
 ];

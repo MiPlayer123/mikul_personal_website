@@ -27,15 +27,9 @@ export default async function TravelPage() {
       {/* Hero */}
       <section className="w-full max-w-5xl grid gap-10 lg:grid-cols-2 items-center scroll-mt-28">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-2">
-            Travel log
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-3">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8">
             Where I&apos;ve been
           </h1>
-          <p className="text-gray-600 dark:text-gray-400 mb-8">
-            Every state, country, and national park — updated after each trip.
-          </p>
           <TravelStats />
         </div>
         <TravelGlobe markers={globeMarkers} />
