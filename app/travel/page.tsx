@@ -8,11 +8,13 @@ import ParksList from "@/components/travel/parks-list";
 import TripTimeline from "@/components/travel/trip-timeline";
 import TravelLockForm from "@/components/travel/travel-lock-form";
 import { isTravelUnlocked } from "@/lib/travel-lock";
+import CountryList from "@/components/travel/country-list";
 import {
   visitedStates,
   visitedCountries,
   smallCountryMarkers,
   globeMarkers,
+  beliUrl,
 } from "@/lib/travel";
 
 // Render per-request so the TRAVEL_PASSWORD cookie gate is always evaluated,
@@ -31,6 +33,19 @@ export default async function TravelPage() {
             Where I&apos;ve been
           </h1>
           <TravelStats />
+          {beliUrl && (
+            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+              Eating my way through them too —{" "}
+              <a
+                href={beliUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-blue-600 dark:text-blue-400 hover:underline"
+              >
+                find me on Beli →
+              </a>
+            </p>
+          )}
         </div>
         <TravelGlobe markers={globeMarkers} />
       </section>
@@ -48,6 +63,9 @@ export default async function TravelPage() {
       <section className="w-full max-w-4xl mt-20">
         <SectionHeading>Around the world</SectionHeading>
         <WorldMap visited={visitedCountries} markers={smallCountryMarkers} />
+        <div className="mt-6">
+          <CountryList />
+        </div>
       </section>
 
       {/* Trips */}
