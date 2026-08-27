@@ -13,6 +13,8 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
   const pointerStart = useRef<number | null>(null);
   const dragOffset = useRef(0);
   const dragOffsetAtStart = useRef(0);
+  // renders a dragged frame when no animation loop is running (reduced motion)
+  const renderDrag = useRef<() => void>(() => {});
   const { theme } = useTheme();
 
   useEffect(() => {
@@ -53,19 +55,32 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
     window.addEventListener("resize", onResize);
 
     let frame = 0;
-    const spin = () => {
-      const dragging = pointerStart.current !== null;
-      if (!reducedMotion && !dragging) autoPhi += 0.003;
-      globe.update({ phi: autoPhi + dragOffset.current });
+    if (reducedMotion) {
+      // no idle loop: the globe stays static and re-renders only on drag,
+      // after a short warm-up while the map texture initializes
+      renderDrag.current = () =>
+        globe.update({ phi: autoPhi + dragOffset.current });
+      let warmupFrames = 0;
+      const warmup = () => {
+        renderDrag.current();
+        if (++warmupFrames < 30) frame = requestAnimationFrame(warmup);
+      };
+      frame = requestAnimationFrame(warmup);
+    } else {
+      const spin = () => {
+        if (pointerStart.current === null) autoPhi += 0.003;
+        globe.update({ phi: autoPhi + dragOffset.current });
+        frame = requestAnimationFrame(spin);
+      };
       frame = requestAnimationFrame(spin);
-    };
-    frame = requestAnimationFrame(spin);
+    }
 
     // fade in once the first frame is ready
     canvas.style.opacity = "1";
 
     return () => {
       cancelAnimationFrame(frame);
+      renderDrag.current = () => {};
       globe.destroy();
       window.removeEventListener("resize", onResize);
     };
@@ -76,7 +91,7 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
       <canvas
         ref={canvasRef}
         className="h-full w-full opacity-0 transition-opacity duration-700 cursor-grab active:cursor-grabbing"
-        style={{ touchAction: "pan-y" }}
+        style={{ touchAction: "pan-y pinch-zoom" }}
         aria-label="Rotating globe with markers on visited places; drag to spin"
         onPointerDown={(e) => {
           pointerStart.current = e.clientX;
@@ -88,6 +103,7 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
           dragOffset.current =
             dragOffsetAtStart.current +
             (e.clientX - pointerStart.current) / 120;
+          renderDrag.current();
         }}
         onPointerUp={() => {
           pointerStart.current = null;
