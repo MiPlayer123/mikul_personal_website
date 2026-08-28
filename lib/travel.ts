@@ -359,7 +359,8 @@ const COUNTRY_CENTROIDS: Record<string, { lat: number; lng: number }[]> = {
   Brazil: [{ lat: -10.0, lng: -53.0 }],
   Argentina: [{ lat: -34.0, lng: -64.0 }],
   Uruguay: [{ lat: -32.8, lng: -56.0 }],
-  Antarctica: [{ lat: -75.0, lng: 0.0 }],
+  // Antarctic Peninsula: far enough north to be visible on the tilted globe
+  Antarctica: [{ lat: -66.0, lng: -60.0 }],
   "Dominican Rep.": [{ lat: 18.9, lng: -70.5 }],
   Jamaica: [{ lat: 18.1, lng: -77.3 }],
 };
