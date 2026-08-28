@@ -8,6 +8,33 @@ type TravelGlobeProps = {
   markers: { lat: number; lng: number }[];
 };
 
+// cobe draws markers slightly past the visible horizon, where they float in
+// the glow. Cull to markers within this angular distance of the view center.
+const VIEW_CENTER_LAT = (14 * Math.PI) / 180; // matches theta: 0.25 tilt
+const CUTOFF_COS = Math.cos((78 * Math.PI) / 180);
+
+function visibleMarkers(
+  all: { lat: number; lng: number }[],
+  rotation: number
+) {
+  // at rotation 0 cobe centers the view near longitude -90; increasing
+  // rotation moves the view west
+  const centerLng = (-90 * Math.PI) / 180 - rotation;
+  return all
+    .filter(({ lat, lng }) => {
+      const la = (lat * Math.PI) / 180;
+      const lo = (lng * Math.PI) / 180;
+      const cosDist =
+        Math.sin(la) * Math.sin(VIEW_CENTER_LAT) +
+        Math.cos(la) * Math.cos(VIEW_CENTER_LAT) * Math.cos(lo - centerLng);
+      return cosDist > CUTOFF_COS;
+    })
+    .map(({ lat, lng }) => ({
+      location: [lat, lng] as [number, number],
+      size: 0.035,
+    }));
+}
+
 export default function TravelGlobe({ markers }: TravelGlobeProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerStart = useRef<number | null>(null);
@@ -40,10 +67,9 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
       baseColor: dark ? [0.35, 0.4, 0.5] : [0.82, 0.84, 0.88],
       markerColor: dark ? [0.38, 0.65, 0.98] : [0.15, 0.39, 0.92],
       glowColor: dark ? [0.12, 0.14, 0.2] : [0.95, 0.95, 0.98],
-      markers: markers.map(({ lat, lng }) => ({
-        location: [lat, lng],
-        size: 0.045,
-      })),
+      markers: visibleMarkers(markers, 0),
+      // keep markers on the surface so the sphere occludes far-side dots
+      markerElevation: 0,
     });
 
     const onResize = () => {
@@ -54,12 +80,23 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
     };
     window.addEventListener("resize", onResize);
 
+    // re-cull markers only after the view has moved meaningfully
+    let lastCullRotation = 0;
+    const render = () => {
+      const rotation = autoPhi + dragOffset.current;
+      if (Math.abs(rotation - lastCullRotation) > 0.05) {
+        lastCullRotation = rotation;
+        globe.update({ phi: rotation, markers: visibleMarkers(markers, rotation) });
+      } else {
+        globe.update({ phi: rotation });
+      }
+    };
+
     let frame = 0;
     if (reducedMotion) {
       // no idle loop: the globe stays static and re-renders only on drag,
       // after a short warm-up while the map texture initializes
-      renderDrag.current = () =>
-        globe.update({ phi: autoPhi + dragOffset.current });
+      renderDrag.current = render;
       let warmupFrames = 0;
       const warmup = () => {
         renderDrag.current();
@@ -69,7 +106,7 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
     } else {
       const spin = () => {
         if (pointerStart.current === null) autoPhi += 0.003;
-        globe.update({ phi: autoPhi + dragOffset.current });
+        render();
         frame = requestAnimationFrame(spin);
       };
       frame = requestAnimationFrame(spin);
