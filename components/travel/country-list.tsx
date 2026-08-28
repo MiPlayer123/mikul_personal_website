@@ -1,5 +1,5 @@
 import React from "react";
-import { visitedCountries, countryMeta } from "@/lib/travel";
+import { visitedCountries, countryMeta, ukBreakdown } from "@/lib/travel";
 
 function flagEmoji(iso2: string) {
   return String.fromCodePoint(
@@ -11,9 +11,13 @@ function flagEmoji(iso2: string) {
 }
 
 export default function CountryList() {
-  const countries = visitedCountries
-    .map((name) => countryMeta[name] ?? { label: name, iso2: "" })
-    .sort((a, b) => a.label.localeCompare(b.label));
+  const countries = [
+    ...visitedCountries.map((name) => {
+      const meta = countryMeta[name] ?? { label: name, iso2: "" };
+      return { label: meta.label, flag: meta.iso2 ? flagEmoji(meta.iso2) : "" };
+    }),
+    ...ukBreakdown.map(({ label, flag }) => ({ label, flag })),
+  ].sort((a, b) => a.label.localeCompare(b.label));
 
   return (
     <ul className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
@@ -22,7 +26,7 @@ export default function CountryList() {
           key={country.label}
           className="flex items-center gap-1.5 rounded-full bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800 px-3 py-1 text-sm shadow-sm"
         >
-          {country.iso2 && <span aria-hidden="true">{flagEmoji(country.iso2)}</span>}
+          {country.flag && <span aria-hidden="true">{country.flag}</span>}
           {country.label}
         </li>
       ))}
