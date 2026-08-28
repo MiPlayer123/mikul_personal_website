@@ -20,7 +20,7 @@ export type Trip = {
 
 export type ParkVisit = {
   name: string; // must match a name in ALL_NATIONAL_PARKS
-  year: number;
+  year?: number; // add once known; shown next to the park when present
 };
 
 // US states visited — two-letter postal codes ("DC" is shown on the map but
@@ -137,10 +137,46 @@ export const countryMeta: Record<string, { label: string; iso2: string }> = {
 };
 
 export const visitedParks: readonly ParkVisit[] = [
-  { name: "Yosemite", year: 2025 },
-  { name: "Zion", year: 2024 },
-  { name: "Grand Canyon", year: 2024 },
-  { name: "Joshua Tree", year: 2023 },
+  { name: "Acadia" },
+  { name: "Arches" },
+  { name: "Badlands" },
+  { name: "Biscayne" },
+  { name: "Bryce Canyon" },
+  { name: "Canyonlands" },
+  { name: "Capitol Reef" },
+  { name: "Congaree" },
+  { name: "Crater Lake" },
+  { name: "Cuyahoga Valley" },
+  { name: "Death Valley" },
+  { name: "Denali" },
+  { name: "Everglades" },
+  { name: "Gateway Arch" },
+  { name: "Glacier Bay" },
+  { name: "Grand Canyon" },
+  { name: "Grand Teton" },
+  { name: "Great Smoky Mountains" },
+  { name: "Hawaiʻi Volcanoes" },
+  { name: "Hot Springs" },
+  { name: "Indiana Dunes" },
+  { name: "Joshua Tree" },
+  { name: "Kenai Fjords" },
+  { name: "Kings Canyon" },
+  { name: "Lassen Volcanic" },
+  { name: "Mammoth Cave" },
+  { name: "Mount Rainier" },
+  { name: "New River Gorge" },
+  { name: "North Cascades" },
+  { name: "Olympic" },
+  { name: "Petrified Forest" },
+  { name: "Pinnacles" },
+  { name: "Redwood" },
+  { name: "Rocky Mountain" },
+  { name: "Saguaro" },
+  { name: "Sequoia" },
+  { name: "Shenandoah" },
+  { name: "Yellowstone" },
+  { name: "Yosemite" },
+  { name: "Zion" },
 ];
 
 export const trips: readonly Trip[] = [
@@ -236,12 +272,112 @@ export const ALL_NATIONAL_PARKS: readonly { name: string; states: string }[] = [
   { name: "Zion", states: "UT" },
 ];
 
+// Shown in the country list alongside "United Kingdom" (not counted toward
+// the 195 — they are one UN country). Subdivision flags use emoji tag
+// sequences, so the emoji is stored directly instead of derived from ISO.
+export const ukBreakdown = [
+  { label: "England", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
+  { label: "Scotland", flag: "🏴󠁧󠁢󠁳󠁣󠁴󠁿" },
+  { label: "Wales", flag: "🏴󠁧󠁢󠁷󠁬󠁳󠁿" },
+] as const;
+
+// Approximate centroids used for globe markers.
+const STATE_CENTROIDS: Record<string, { lat: number; lng: number }> = {
+  AL: { lat: 32.8, lng: -86.8 },
+  AK: { lat: 64.0, lng: -152.0 },
+  AZ: { lat: 34.2, lng: -111.6 },
+  AR: { lat: 34.8, lng: -92.2 },
+  CA: { lat: 37.2, lng: -119.3 },
+  CO: { lat: 39.0, lng: -105.5 },
+  CT: { lat: 41.6, lng: -72.7 },
+  DE: { lat: 39.0, lng: -75.5 },
+  DC: { lat: 38.9, lng: -77.0 },
+  FL: { lat: 28.6, lng: -82.4 },
+  GA: { lat: 32.6, lng: -83.4 },
+  HI: { lat: 20.3, lng: -156.4 },
+  ID: { lat: 44.4, lng: -114.6 },
+  IL: { lat: 40.0, lng: -89.2 },
+  IN: { lat: 39.9, lng: -86.3 },
+  IA: { lat: 42.0, lng: -93.5 },
+  KS: { lat: 38.5, lng: -98.4 },
+  KY: { lat: 37.5, lng: -85.3 },
+  LA: { lat: 31.0, lng: -92.0 },
+  ME: { lat: 45.4, lng: -69.2 },
+  MD: { lat: 39.0, lng: -76.8 },
+  MA: { lat: 42.3, lng: -71.8 },
+  MI: { lat: 44.3, lng: -85.4 },
+  MN: { lat: 46.3, lng: -94.3 },
+  MS: { lat: 32.7, lng: -89.7 },
+  MO: { lat: 38.4, lng: -92.5 },
+  MT: { lat: 47.0, lng: -109.6 },
+  NE: { lat: 41.5, lng: -99.8 },
+  NV: { lat: 39.3, lng: -116.6 },
+  NH: { lat: 43.7, lng: -71.6 },
+  NJ: { lat: 40.2, lng: -74.7 },
+  NM: { lat: 34.4, lng: -106.1 },
+  NY: { lat: 42.9, lng: -75.5 },
+  NC: { lat: 35.5, lng: -79.4 },
+  ND: { lat: 47.5, lng: -100.5 },
+  OH: { lat: 40.3, lng: -82.8 },
+  OK: { lat: 35.6, lng: -97.5 },
+  OR: { lat: 43.9, lng: -120.6 },
+  PA: { lat: 40.9, lng: -77.8 },
+  RI: { lat: 41.7, lng: -71.6 },
+  SC: { lat: 33.9, lng: -80.9 },
+  SD: { lat: 44.4, lng: -100.2 },
+  TN: { lat: 35.9, lng: -86.4 },
+  TX: { lat: 31.5, lng: -99.3 },
+  UT: { lat: 39.3, lng: -111.7 },
+  VT: { lat: 44.1, lng: -72.7 },
+  VA: { lat: 37.5, lng: -78.9 },
+  WA: { lat: 47.4, lng: -120.4 },
+  WV: { lat: 38.6, lng: -80.6 },
+  WI: { lat: 44.6, lng: -89.9 },
+  WY: { lat: 43.0, lng: -107.5 },
+};
+
+// Keyed by map-dataset name; the US is covered by state markers, and the UK
+// gets one marker per home nation.
+const COUNTRY_CENTROIDS: Record<string, { lat: number; lng: number }[]> = {
+  India: [{ lat: 22.0, lng: 79.0 }],
+  Canada: [{ lat: 56.0, lng: -106.0 }],
+  Singapore: [{ lat: 1.35, lng: 103.82 }],
+  Malaysia: [{ lat: 4.2, lng: 102.0 }],
+  "United Arab Emirates": [{ lat: 24.0, lng: 54.0 }],
+  France: [{ lat: 46.6, lng: 2.5 }],
+  Portugal: [{ lat: 39.6, lng: -8.0 }],
+  Peru: [{ lat: -9.2, lng: -75.0 }],
+  Greece: [{ lat: 39.0, lng: 22.0 }],
+  "United Kingdom": [
+    { lat: 52.4, lng: -1.5 }, // England
+    { lat: 56.8, lng: -4.2 }, // Scotland
+    { lat: 52.3, lng: -3.7 }, // Wales
+  ],
+  Mexico: [{ lat: 23.6, lng: -102.5 }],
+  Bahamas: [{ lat: 24.25, lng: -76.0 }],
+  "Costa Rica": [{ lat: 9.7, lng: -84.2 }],
+  Brazil: [{ lat: -10.0, lng: -53.0 }],
+  Argentina: [{ lat: -34.0, lng: -64.0 }],
+  Uruguay: [{ lat: -32.8, lng: -56.0 }],
+  Antarctica: [{ lat: -75.0, lng: 0.0 }],
+  "Dominican Rep.": [{ lat: 18.9, lng: -70.5 }],
+  Jamaica: [{ lat: 18.1, lng: -77.3 }],
+};
+
 // Derived values used across the page
 export const stateCount = visitedStates.filter(
   (s: string) => s !== "DC"
 ).length;
 export const countryCount = visitedCountries.length;
 export const parkCount = visitedParks.length;
-export const globeMarkers = trips.flatMap((trip) =>
-  trip.places.map(({ lat, lng }) => ({ lat, lng }))
-);
+
+// Globe markers: one dot per visited state and per visited country
+// (states cover the US; the UK gets England/Scotland/Wales dots).
+export const globeMarkers = [
+  ...visitedStates.flatMap((s) =>
+    STATE_CENTROIDS[s] ? [STATE_CENTROIDS[s]] : []
+  ),
+  ...visitedCountries
+    .filter((c) => c !== "United States of America")
+    .flatMap((c) => COUNTRY_CENTROIDS[c] ?? []),
+];

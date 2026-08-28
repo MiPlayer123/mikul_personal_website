@@ -42,7 +42,7 @@ export default function TravelGlobe({ markers }: TravelGlobeProps) {
       glowColor: dark ? [0.12, 0.14, 0.2] : [0.95, 0.95, 0.98],
       markers: markers.map(({ lat, lng }) => ({
         location: [lat, lng],
-        size: 0.06,
+        size: 0.045,
       })),
     });
 

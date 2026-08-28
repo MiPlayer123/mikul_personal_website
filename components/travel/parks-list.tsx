@@ -14,39 +14,43 @@ export default function ParksList() {
         {visited.length} of {ALL_NATIONAL_PARKS.length} national parks
       </p>
 
-      <ul className="flex flex-col gap-2">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
         {visited
           .slice()
           .sort(
             (a, b) =>
-              (visitedByName.get(b.name) ?? 0) - (visitedByName.get(a.name) ?? 0)
+              (visitedByName.get(b.name) ?? 0) -
+                (visitedByName.get(a.name) ?? 0) ||
+              a.name.localeCompare(b.name)
           )
-          .map((park) => (
-            <li
-              key={park.name}
-              className="flex items-center gap-3 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800 px-4 py-2.5 text-sm shadow-sm"
-            >
-              <svg
-                className="h-4 w-4 text-blue-600 dark:text-blue-400 flex-none"
-                viewBox="0 0 20 20"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2.5}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
+          .map((park) => {
+            const year = visitedByName.get(park.name);
+            return (
+              <li
+                key={park.name}
+                className="flex items-center gap-2 rounded-xl bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-800 px-3 py-1.5 text-sm shadow-sm"
               >
-                <path d="M4 10.5l4 4 8-9" />
-              </svg>
-              <span className="font-medium">{park.name}</span>
-              <span className="text-gray-400 dark:text-gray-500 text-xs">
-                {park.states}
-              </span>
-              <span className="ml-auto text-xs text-gray-400 dark:text-gray-500 tabular-nums">
-                {visitedByName.get(park.name)}
-              </span>
-            </li>
-          ))}
+                <svg
+                  className="h-3.5 w-3.5 text-blue-600 dark:text-blue-400 flex-none"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M4 10.5l4 4 8-9" />
+                </svg>
+                <span className="font-medium truncate">{park.name}</span>
+                {year && (
+                  <span className="ml-auto text-xs text-gray-400 dark:text-gray-500 tabular-nums">
+                    {year}
+                  </span>
+                )}
+              </li>
+            );
+          })}
       </ul>
 
       <details className="mt-4 group">
