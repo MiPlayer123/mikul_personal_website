@@ -59,10 +59,6 @@ export const links = [
     name: "Travel",
     hash: "/travel",
   },
-  {
-    name: "Gym",
-    hash: "/gym",
-  },
 ] as const;
 
 export const experiencesData = [
