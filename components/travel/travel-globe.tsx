@@ -12,6 +12,10 @@ type TravelGlobeProps = {
 // the glow. Cull to markers within this angular distance of the view center.
 const VIEW_CENTER_LAT = (14 * Math.PI) / 180; // matches theta: 0.25 tilt
 const CUTOFF_COS = Math.cos((78 * Math.PI) / 180);
+// far-southern markers (Antarctica) can never get closer than ~80° to the
+// north-tilted view center; give them a wider envelope — they graze the
+// bottom limb, where cobe's overshoot isn't visible
+const POLAR_CUTOFF_COS = Math.cos((84 * Math.PI) / 180);
 
 function visibleMarkers(
   all: { lat: number; lng: number }[],
@@ -27,7 +31,7 @@ function visibleMarkers(
       const cosDist =
         Math.sin(la) * Math.sin(VIEW_CENTER_LAT) +
         Math.cos(la) * Math.cos(VIEW_CENTER_LAT) * Math.cos(lo - centerLng);
-      return cosDist > CUTOFF_COS;
+      return cosDist > (lat <= -50 ? POLAR_CUTOFF_COS : CUTOFF_COS);
     })
     .map(({ lat, lng }) => ({
       location: [lat, lng] as [number, number],
