@@ -63,12 +63,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Member of Technical Staff - Deeptune",
+    title: "Member of Technical Staff - Deeptune (acquired by Mercor)",
     location: "New York, NY",
     description:
-      "First intern and early engineer building AI training gyms—simulation environments where AI agents practice real-world tasks to learn and improve over time.",
+      "First intern and early engineer building AI training gyms: simulation environments where AI agents practice real-world tasks to learn and improve over time.",
     icon: React.createElement(CgWorkAlt),
-    date: "2025 - present",
+    date: "Sep 2025 - Aug 2026",
   },
   {
     title: "Co-Founder & CEO - Wagoo",
@@ -76,7 +76,7 @@ export const experiencesData = [
     description:
       "Build the next generation of desktop and personal assistants. -> Pivoted into Wagoo Lending",
     icon: React.createElement(CgWorkAlt),
-    date: "2025 - present",
+    date: "Jun 2025 - Present",
   },
   {
     title: "Founding Engineer - Conductor Labs",
@@ -84,7 +84,7 @@ export const experiencesData = [
     description:
       "Front-end and back-end for agent orchestration for climate and industrial processes generation.",
     icon: React.createElement(CgWorkAlt),
-    date: "2025 - present",
+    date: "Mar 2025 - Sep 2025",
   },
   {
     title: "Prompt Engineering Intern - Rilla",
@@ -92,7 +92,7 @@ export const experiencesData = [
     description:
       "Generate accurate prompts for sales/ marketing rep tracker systems that align with client use cases.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - present",
+    date: "Sep 2024 - May 2025",
   },
   {
     title: "Digitization Intern - Magna International",
@@ -100,7 +100,7 @@ export const experiencesData = [
     description:
       "Implementing text-to-speech and speech-to-text algorithms using AWS and integrating them with Gen AI via AWS and Claude.",
     icon: React.createElement(CgWorkAlt),
-    date: "2024 - 2024 | 3 months",
+    date: "May 2024 - Aug 2024",
   },
   {
     title: "Researcher @ The Accessible and Accelerated Robotics Lab (A²R Lab)",
@@ -108,7 +108,7 @@ export const experiencesData = [
     description:
       "Developing and implementing open-source algorithms for dynamic motion planning and control. Now taking these algorithms and implementing them on the robot dog & robot arm hardware.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "Feb 2024 - Apr 2025",
   },
   {
     title: "Columbia University",
@@ -116,7 +116,7 @@ export const experiencesData = [
     description:
       "Clubs: CU Formula Racing, CU Robotics Club - Battlebots, Columbia Space Initiative, Paragon Global Investments (Quant Division) ",
     icon: React.createElement(LuGraduationCap),
-    date: "2023 - present",
+    date: "Sep 2023 - Present",
   },
   {
     title: "Cranbrook HUB",
@@ -124,7 +124,7 @@ export const experiencesData = [
     description:
       "Instructed Horizons-Upward Bound students in foundational robotics by guiding hands-on VEX robot construction and programming for individual teams.",
     icon: React.createElement(FaChalkboardTeacher),
-    date: "2023 | 3 months",
+    date: "Jun 2023 - Aug 2023",
   },
   {
     title: "Rockbridge Growth Equity",
@@ -132,7 +132,7 @@ export const experiencesData = [
     description:
       "Interned at private equity firm, learning about and working on fundemental analysis of potential investments. Attended board meetings, and created company summaries.",
     icon: React.createElement(BsBank),
-    date: "2023 | 1 month",
+    date: "May 2023 - Jun 2023",
   },
   {
     title: "Intrepid Control Systems",
@@ -140,7 +140,7 @@ export const experiencesData = [
     description:
       "Drasically reduced hardware device startup time by improving GPS startup. Revamped low-level C code to store and access critical data.",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 | 3 months",
+    date: "Jun 2022 - Aug 2022",
   },
   {
     title: "Intrepid Control Systems",
@@ -148,7 +148,7 @@ export const experiencesData = [
     description:
       "Expedited the PCB file generation process by creating a CI/CD pipeline in GitLab. Also included PCB validation, assembly, build, and BOM file generation.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 | 3 months",
+    date: "Jul 2021 - Sep 2021",
   },
   {
     title: "Student Researcher @ Oakland University",
@@ -156,7 +156,7 @@ export const experiencesData = [
     description:
       "Developed adversarial attack defense algorithms & ASV countermeasures using teacher/student and federated learning techniques. Published a comparative analysis of ASV methods.",
     icon: React.createElement(FaReact),
-    date: "2020 - 2022",
+    date: "Jun 2020 - Dec 2022",
   },
 ] as const;
 
@@ -177,6 +177,9 @@ export const projectsData = [
     imageUrl: keel,
     url: "https://keel.mikulsaravanan.com",
   },
+];
+
+export const pastProjectsData = [
   {
     title: "Turing Test Visualization",
     description:
@@ -193,9 +196,6 @@ export const projectsData = [
     imageUrl: einkDashboard,
     url: "",
   },
-];
-
-export const pastProjectsData = [
   {
     title: "Wagoo v0",
     description:

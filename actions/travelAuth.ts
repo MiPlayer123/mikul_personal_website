@@ -38,7 +38,7 @@ export const unlockTravel = async (
   if (entry && entry.count >= MAX_ATTEMPTS) {
     const minutesLeft = Math.max(1, Math.ceil((entry.resetAt - now) / 60000));
     return {
-      error: `Too many attempts — try again in ${minutesLeft} min.`,
+      error: `Too many attempts - try again in ${minutesLeft} min.`,
     };
   }
 
@@ -56,7 +56,7 @@ export const unlockTravel = async (
       attempts.set(key, { count: 1, resetAt: now + WINDOW_MS });
     }
     await new Promise((resolve) => setTimeout(resolve, FAIL_DELAY_MS));
-    return { error: "Wrong password — try again." };
+    return { error: "Wrong password - try again." };
   }
 
   attempts.delete(key);

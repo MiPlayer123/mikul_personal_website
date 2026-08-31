@@ -13,7 +13,7 @@ type TravelGlobeProps = {
 const VIEW_CENTER_LAT = (14 * Math.PI) / 180; // matches theta: 0.25 tilt
 const CUTOFF_COS = Math.cos((78 * Math.PI) / 180);
 // far-southern markers (Antarctica) can never get closer than ~80° to the
-// north-tilted view center; give them a wider envelope — they graze the
+// north-tilted view center; give them a wider envelope - they graze the
 // bottom limb, where cobe's overshoot isn't visible
 const POLAR_CUTOFF_COS = Math.cos((84 * Math.PI) / 180);
 

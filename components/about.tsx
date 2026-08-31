@@ -24,7 +24,7 @@ export default function About() {
 
         <p className='mb-5'>
           From a <a href="https://patents.google.com/patent/US20220390135A1/" className="links" target='_blank'>patented</a> air cleaning robot to <a href="https://link.springer.com/article/10.1007/s10462-023-10539-8" className="links" target='_blank'>audio forensics research</a> to AI underwriting software, I turn ideas into products.
-          Currently at <a href="https://deeptune.com" className="links" target='_blank'>Deeptune</a> creating training environments for AI agents, while running <a href="https://wagoo.ai" className="links" target='_blank'>Wagoo</a> on the side.
+          Just left <a href="https://deeptune.com" className="links" target='_blank'>Deeptune</a> (acquired by Mercor), where I created training environments for AI agents, while running <a href="https://wagoo.ai" className="links" target='_blank'>Wagoo</a> in parallel.
           Studying CS and Econ at Columbia. Ex <a href="https://devpost.com/MiPlayer123?ref_content=user-portfolio&ref_feature=portfolio" className="links" target='_blank'>hacker</a>, I hit the gym, explore the outdoors, and DJ on the side.
         </p>
 
