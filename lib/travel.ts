@@ -1,7 +1,7 @@
-// Travel log data — edit this file after each trip and everything on /travel
+// Travel log data - edit this file after each trip and everything on /travel
 // (counters, maps, globe markers, park checklist, trip timeline) updates.
 //
-// TODO(mikul): the entries below are placeholders — replace them with your
+// TODO(mikul): the entries below are placeholders - replace them with your
 // real travels.
 
 export type TripPlace = {
@@ -23,7 +23,7 @@ export type ParkVisit = {
   year?: number; // add once known; shown next to the park when present
 };
 
-// US states visited — two-letter postal codes ("DC" is shown on the map but
+// US states visited - two-letter postal codes ("DC" is shown on the map but
 // not counted toward the 50). Currently: all 50 except KS, DE, OK.
 export const visitedStates = [
   "AL",
@@ -75,7 +75,7 @@ export const visitedStates = [
   "WY",
 ] as const;
 
-// Countries visited — names must match the world map's country names
+// Countries visited - names must match the world map's country names
 // (world-atlas), e.g. "United States of America", "Dominican Rep.".
 // England, Scotland, and Wales are one entry: "United Kingdom".
 export const visitedCountries = [
@@ -101,7 +101,7 @@ export const visitedCountries = [
   "Jamaica",
 ] as const;
 
-// Visited countries too small to appear on the 110m world map — drawn as
+// Visited countries too small to appear on the 110m world map - drawn as
 // marker dots instead of filled shapes.
 export const smallCountryMarkers = [
   { name: "Singapore", lat: 1.35, lng: 103.82 },
@@ -273,7 +273,7 @@ export const ALL_NATIONAL_PARKS: readonly { name: string; states: string }[] = [
 ];
 
 // Shown in the country list alongside "United Kingdom" (not counted toward
-// the 195 — they are one UN country). Subdivision flags use emoji tag
+// the 195 - they are one UN country). Subdivision flags use emoji tag
 // sequences, so the emoji is stored directly instead of derived from ISO.
 export const ukBreakdown = [
   { label: "England", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },

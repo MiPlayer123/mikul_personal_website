@@ -129,7 +129,7 @@ export default function FloatingDuck() {
           const eased = 1 - Math.pow(1 - p.flipProgress, 3);
           p.rotation = p.targetRotation * eased;
         }
-        // Bounce scale during flip — squish at start, stretch at peak, settle
+        // Bounce scale during flip - squish at start, stretch at peak, settle
         const t = p.flipProgress;
         p.scaleX = 1 + 0.15 * Math.sin(t * Math.PI);
         p.scaleY = 1 - 0.15 * Math.sin(t * Math.PI);
@@ -174,7 +174,7 @@ export default function FloatingDuck() {
         }
         lastScroll = currentScroll;
 
-        // Soft gravity — gently pulls duck toward vertical center
+        // Soft gravity - gently pulls duck toward vertical center
         const centerY = h * 0.45;
         const distFromCenter = (centerY - p.y) / h;
         p.vy += distFromCenter * 0.004;
@@ -209,7 +209,7 @@ export default function FloatingDuck() {
         // Bob
         const bobOffset = Math.sin(p.bobTime * BOB_FREQUENCY * Math.PI * 2) * BOB_AMPLITUDE;
 
-        // Edge bounce — reset drift angle to point away from the wall
+        // Edge bounce - reset drift angle to point away from the wall
         if (p.x < 0) {
           p.x = 0;
           p.vx = Math.abs(p.vx) * BOUNCE_ENERGY_LOSS + 0.02;
@@ -309,19 +309,19 @@ export default function FloatingDuck() {
       tapTimesRef.current = tapTimesRef.current.filter((t) => now - t < 400);
 
       if (tapTimesRef.current.length >= 2) {
-        // Double tap — dismiss with fade out
+        // Double tap - dismiss with fade out
         setDismissed(true);
         tapTimesRef.current = [];
         return;
       }
 
-      // Single tap — do a flip!
+      // Single tap - do a flip!
       p.isFlipping = true;
       p.flipProgress = 0;
       p.targetRotation = p.rotation + 360;
       p.vy -= 0.5; // little upward pop
     } else {
-      // Throw — calculate velocity from pointer history
+      // Throw - calculate velocity from pointer history
       const history = pointerHistoryRef.current;
       if (history.length >= 2) {
         const oldest = history[0];
