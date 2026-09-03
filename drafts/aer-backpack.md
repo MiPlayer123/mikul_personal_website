@@ -10,11 +10,20 @@ Requirements: compact for everyday carry (EDC): 1-2 laptops, iPad, chargers, and
 
 I was willing to spend more to get something that can last me a long time instead of 1-2 years of a cheaper one.
 
-Started looking into these: [FILL IN: the shortlist]
+Started looking into these (from my research at the time):
 
-Compared them all, but here are the issues with each one: [FILL IN: one line per bag]
+- **Aer City Pack Pro 2 (24L)**: lay-flat main compartment, padded 16" laptop sleeve, luggage pass-through. 1680D Cordura ballistic, YKK zippers, Duraflex hardware. 2.86 lbs so a bit heavy, but extremely durable. Black was sold out from demand at the time. One of the most well-regarded EDC packs out there, travels fine as a personal item.
+- **Almond Oak Expandable Travel Backpack (25L + 5L)**: the budget standout at $130. 1.86 lbs, expands 25L to 30L, clamshell, 16" laptop sleeve with false bottom, hidden passport pocket. 280D nylon with PU coating, FidLock magnetic sternum strap. Small founder-led brand with very good reviews.
+- **Evergoods CPL24 V3 (24L)**: the cult favorite in EDC circles. Solution-dyed 840D ballistic, YKK zippers, 7075 aluminum side stays. Harness is considered one of the best in the game. No external water bottle pockets and no luggage pass-through.
+- **Aer Travel Pack 3 Small (28L)**: Aer's crossover EDC and travel bag. 15" laptop compartment, shoe compartment, lockable zippers, clamshell, luggage pass-through. Bigger than the City Pack Pro, better for real packing, bulkier for commuting.
 
-Then the 20L and 24L came out. Ended up taking the 24L as it is not much physically bigger but has a lot more space.
+Compared them all, but here are the issues with each one:
+
+- Almond Oak: [FILL IN, my guess: 280D nylon is thin, and the whole point was buying once for many years]
+- Evergoods CPL24: [FILL IN, my guess: no luggage pass-through and no bottle pockets killed it for travel use]
+- Aer Travel Pack 3 Small: [FILL IN, my guess: too big for the daily commute, and the City Pack Pro already covered the travel case]
+
+Then the City Pack Pro 2 came out in both 20L and 24L. Ended up taking the 24L as it is not much physically bigger but has a lot more space.
 
 Finally pulled the trigger on it (March 2026, black).
 
@@ -38,5 +47,5 @@ The clamshell opening is super useful for my back, but it can also be used as a 
 
 ## Gaps
 
-- [FILL IN] The shortlist and one reason each bag lost. This is the only real hole in the series. No notes on it turned up in Drive or Gmail, and I can't see your Claude chat history, so this one is on you.
+- [FILL IN] Why each of the three losers lost. I put a guess next to each based on your requirements. Confirm, or replace with the real reason.
 - [FILL IN] About 5 months in now. Shoulder pain gone? Any wear?
