@@ -14,7 +14,7 @@ Went to the Korin store and tested their cheaper ones (their house brand, Togiha
 
 Ended up getting the Tojiro Basic for $75 with shipping. It has the bang for buck with VG-10 steel and a really nice handle that shows it's a good knife. I use it a lot and it's a very good purchase.
 
-It is a harder steel so it keeps its edge, but it's gonna be harder to sharpen later.
+It is a harder steel so it keeps its edge, but it's gonna be harder to sharpen later. Haven't had to sharpen it yet since I just got it.
 
 Went with the Basic since there is no real benefit with the regular (the DP line). Same steel, nicer finish, a lot more money.
 
@@ -35,5 +35,4 @@ Other reviews also say it is the best value for money (Japanese) knife, but I wo
 
 ## Gaps
 
-- [FILL IN] Have you sharpened it yet? If so, how did it go.
-- Optional: what the cooking friends actually said, if you remember a line.
+- None blocking. Optional: what the cooking friends actually said, if you remember a line.

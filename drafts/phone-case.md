@@ -12,9 +12,9 @@ I was very picky with phone cases:
 - at a reasonable price
 - they also needed to be square and not rounded edges
 
-Ended up doing 2 years of a Mous case, but it failed me and my dad. I fell with the phone in my pocket and the case didn't help. My phone got completely shattered. My dad also dropped his from a very small height and it cracked too.
+Ended up doing 2 years of a Mous case (the clear one, on my iPhone 11 and then my 13), but it failed me and my dad. I fell with the phone in my pocket and the case didn't help. My phone got completely shattered. My dad also dropped his from a very small height and it cracked too.
 
-Then switched to an ESR case.
+Then switched to an ESR case when I got the 16 Pro.
 
 Honestly still super happy with it, but it's too thick for my liking. Works well though.
 
@@ -26,11 +26,11 @@ I think I was too picky for a phone case. They were either really expensive, not
 
 | Fact | Value | Source |
 |---|---|---|
-| Mous Limitless | AiroShock lining, no published drop height, MagSafe-compatible | [AppleInsider](https://appleinsider.com/articles/21/08/21/mous-magsafe-compatible-gear-review-a-whole-ecosystem-of-magnetic-accessories) |
-| ESR Classic Hybrid HaloLock | acrylic back plus TPU frame, "Air-Guard" corners, 1,500 g magnet hold, yellowing-resistant, MagSafe | [ESR](https://www.esrtech.com/collections/iphone-acrylic-tpu-protective-phone-cases) |
+| Phones | iPhone 11 and iPhone 13 (or 13 Pro) with the Mous case, iPhone 16 Pro with the ESR case | Mikul |
+| Mous clear case | Mous's clear line is called Clarity (older clear Limitless models also existed). AiroShock lining, no published drop height, MagSafe-compatible | [Mous](https://www.mous.co/products/protective-clear-phone-case-magnetic-clarity) |
+| ESR case | Classic Hybrid with Camera Guard. HaloLock is just ESR's name for the MagSafe magnet ring, so since it's MagSafe it is the HaloLock version. Acrylic back plus TPU frame, "Air-Guard" corners, 1,500 g magnet hold, yellowing-resistant | [ESR](https://www.esrtech.com/collections/iphone-acrylic-tpu-protective-phone-cases) |
 
 ## Gaps
 
-- [FILL IN] Which phone(s). Two years of Mous plus the ESR means at least one phone, maybe two.
-- [FILL IN] Confirm the models: Mous Limitless (clear) and ESR Classic Hybrid HaloLock (clear)?
+- 13 vs 13 Pro: you weren't sure. Say "13" in the post unless you check.
 - Optional: any other cases you tried or returned along the way.
