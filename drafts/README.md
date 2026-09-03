@@ -1,27 +1,20 @@
 # Blog drafts (not published)
 
 Files in this folder are working notes, not posts. The blog loader only reads
-`content/`, so nothing here shows up on the site. When a draft is ready, write
-the real post into `content/<slug>.md` with the standard frontmatter.
+`content/`, so nothing here shows up on the site. When a draft is ready, the
+real post goes in `content/<slug>.md` with the usual frontmatter.
 
 ## Series: Product purchase reviews
 
-One post per product. The point of the series is not the review, it is the
-decision: what I needed, what I looked at, why the others lost, and whether
-the pick held up.
+Mikul's framing (kept verbatim): "The purpose of these blogs is to provide
+reviews on selected products, but more importantly, to go over the
+decision-making factors that I used to pick said product over another one."
 
-Every post in the series follows the same skeleton so readers recognize it:
+One post per product. Each draft below has:
 
-1. **Trigger**: what made me go looking
-2. **Requirements**: the list I was actually optimizing for (and the budget)
-3. **Shortlist**: what I compared, and the one reason each one fell off
-4. **The pick**: what I bought, what I paid, where
-5. **After real use**: what held up, what did not, would I buy again
+- **Notes**: Mikul's own notes, spelling fixed, wording left alone. Write the
+  post from these so the voice stays his.
+- **Research**: facts looked up to fill blanks, with sources. Use as needed.
+- **Gaps**: things only Mikul can answer. Marked `[FILL IN]` in the notes.
 
-Legend used in the drafts:
-
-- `[FILL IN]` only Mikul knows this (a memory, a price paid, a reason)
-- `[VERIFY]` researched fact, likely right, confirm before publishing
-- `[CUT?]` line that probably does not earn its place
-
-Order to publish (suggested): laptop, backpack, knife, phone case.
+Suggested order: laptop, backpack, knife, phone case.

@@ -1,55 +1,36 @@
-# Phone case (draft notes)
+# Phone case
 
-Suggested slug: `clear-phone-case`
-Suggested title angle: "I was too picky about phone cases"
+Slug idea: `phone-case`
 
-Honest read: this is the weakest of the four as a decision story, because the
-conclusion is "my requirements were contradictory." That is actually a fine
-angle if you make it the point of the post rather than an afterthought.
+## Notes (Mikul's words)
 
-## 1. Trigger
+I was very picky with phone cases:
+- transparent
+- with MagSafe
+- not super thick
+- can survive huge drops
+- at a reasonable price
+- they also needed to be square and not rounded edges
 
-- [FILL IN: what phone / when did this start? Two years of Mous means the timeline matters.]
+Ended up doing 2 years of a Mous case, but it failed me and my dad. I fell with the phone in my pocket and the case didn't help. My phone got completely shattered. My dad also dropped his from a very small height and it cracked too.
 
-## 2. Requirements (the picky list)
+Then switched to an ESR case.
 
-- Transparent
-- MagSafe
-- Not super thick
-- Survives huge drops
-- Reasonable price
-- Square edges, not rounded (matches the flat-sided iPhones)
+Honestly still super happy with it, but it's too thick for my liking. Works well though.
 
-The post's thesis: these requirements fight each other. Clear + thin + drop-proof is close to impossible. Everything available was either expensive, impractical (skeleton cases), too thick, or not durable enough.
+I think I'm gonna no longer go transparent, but it was nice to have for a bit.
 
-## 3. Shortlist and why each lost
+I think I was too picky for a phone case. They were either really expensive, not practical (skeleton phone cases), or just too thick or not durable enough.
 
-- [FILL IN: which ones did you actually consider? Notes only name the two you bought. Candidates people usually cross-shop: Apple Clear Case, Spigen Ultra Hybrid, Otterbox Symmetry Clear, Peak Design (not clear), Nomad, dbrand Grip / Ghost.]
-- Skeleton / minimal cases: not practical.
-- Premium clear cases: too expensive.
-
-## 4. The picks (two of them)
-
-- **Mous Limitless (clear), ~2 years.** Failed for both me and my dad. [FILL IN: how did it fail? Cracked? Yellowed? Magnets weakened? Phone broke in a drop? This is the key detail.]
-- **ESR Classic Hybrid HaloLock (clear).** Current case.
-
-## 5. After real use
-
-- ESR works well and protects fine, but it is thicker than I'd like. Not thrilled, but it does the job.
-- Verdict: clear was nice for a while, but I'm probably done with transparent cases. [FILL IN: what would you go to next?]
-- Lesson: I was too picky. Decide which two of the five requirements actually matter.
-
-## Research (filled in)
+## Research
 
 | Fact | Value | Source |
 |---|---|---|
-| Mous Limitless | AiroShock lining, no published drop height, MagSafe-compatible. Older clear versions used polycarbonate (rigid, resists yellowing) | [AppleInsider](https://appleinsider.com/articles/21/08/21/mous-magsafe-compatible-gear-review-a-whole-ecosystem-of-magnetic-accessories) |
-| ESR Classic Hybrid HaloLock | acrylic back (claimed 3x scratch resistance vs polycarbonate) + TPU frame, "Air-Guard" corners, 1,500 g magnet hold, yellowing-resistant | [ESR](https://www.esrtech.com/collections/iphone-acrylic-tpu-protective-phone-cases) |
-| Price gap | Mous Limitless ~$60-70, ESR Classic Hybrid ~$20-30 [VERIFY current prices] | retail listings |
+| Mous Limitless | AiroShock lining, no published drop height, MagSafe-compatible | [AppleInsider](https://appleinsider.com/articles/21/08/21/mous-magsafe-compatible-gear-review-a-whole-ecosystem-of-magnetic-accessories) |
+| ESR Classic Hybrid HaloLock | acrylic back plus TPU frame, "Air-Guard" corners, 1,500 g magnet hold, yellowing-resistant, MagSafe | [ESR](https://www.esrtech.com/collections/iphone-acrylic-tpu-protective-phone-cases) |
 
-## Still missing from you
+## Gaps
 
-- [FILL IN] How exactly the Mous failed (you and your dad). Without this the "failed me" line is unearned.
-- [FILL IN] Which phone(s) this covers.
-- [FILL IN] Anything else you tried or returned.
-- [FILL IN] Where you land now: what case type is next.
+- [FILL IN] Which phone(s). Two years of Mous plus the ESR means at least one phone, maybe two.
+- [FILL IN] Confirm the models: Mous Limitless (clear) and ESR Classic Hybrid HaloLock (clear)?
+- Optional: any other cases you tried or returned along the way.

@@ -1,53 +1,42 @@
-# Aer backpack (draft notes)
+# Aer City Pack Pro 2 24L
 
-Suggested slug: `aer-pro-pack-24l`
-Suggested title angle: "Replacing the $30 Costco backpack"
+Slug idea: `aer-city-pack-pro-2`
 
-## 1. Trigger
+## Notes (Mikul's words)
 
-- Years of $30 Costco backpacks.
-- One day it started hurting my shoulder badly even with a light load. Got fed up.
+I have been using $30 Costco backpacks, and there was one time it started hurting my shoulder so bad, even with lightweight. I got fed up. Started doing research into backpacks.
 
-## 2. Requirements
+Requirements: compact for everyday carry (EDC): 1-2 laptops, iPad, chargers, and other misc. Good shoulder support and balance. Small but can fit more for travel if need be.
 
-- Compact everyday carry (EDC): 1-2 laptops, iPad, chargers, misc.
-- Good shoulder support and balance.
-- Small day to day, but can expand for travel when needed.
-- Willing to spend more for something that lasts many years instead of 1-2 years for a cheap one. [FILL IN: rough budget ceiling you set]
+I was willing to spend more to get something that can last me a long time instead of 1-2 years of a cheaper one.
 
-## 3. Shortlist and why each lost
+Started looking into these: [FILL IN: the shortlist]
 
-- [FILL IN: the "started looking into these: ...." list is empty. Which bags? Typical competitors people cross-shop with Aer: Bellroy Transit Workpack, Peak Design Everyday Backpack, Evergoods CPL24, Tom Bihn Synapse, Aer Day Pack / City Pack, Aer Travel Pack.]
-- [FILL IN: "here are the issues with each one:" one line per bag. This is the section that makes the post worth reading.]
-- Then the Pro Pack 20L and 24L came out. [VERIFY: notes say "20L and 24L came out". This matches Aer's Pro Pack line, 20L released early 2023, 24L late 2023. The AirTag pocket and luggage pass-through you mention are Pro Pack 24L features, so this is almost certainly the bag. Note Aer also sells a City Pack Pro 2 in 20L/24L; make sure the post names the right one.]
-- 20L vs 24L: took the 24L because it is not much physically bigger but has noticeably more space.
+Compared them all, but here are the issues with each one: [FILL IN: one line per bag]
 
-## 4. The pick
+Then the 20L and 24L came out. Ended up taking the 24L as it is not much physically bigger but has a lot more space.
 
-- Aer Pro Pack 24L. [FILL IN: price paid and colour. Pro Pack 20L retails around $179; check your receipt for the 24L.]
-- [FILL IN: what finally made you pull the trigger after all the comparing?]
+Finally pulled the trigger on it (March 2026, black).
 
-## 5. After real use
+First got it and I was blown away by the details of the little things: pen holders, suitcase strap, pockets for everything, even an AirTag holder.
 
-- First impression: blown away by the small details. Pen holders, suitcase pass-through strap, a pocket for everything, even an AirTag pocket.
-- Shoulder straps well padded, hold the bag at a good position on the back. Chest strap distributes weight.
-- Slightly on the big side, especially for my height, but it squishes down when empty and expands when full.
-- Clamshell opening is great for packing, but it still works like a normal top-access backpack for daily use.
-- [FILL IN: how long have you had it now? Any wear? Shoulder pain gone?]
+The shoulder straps were padded well and supported the backpack at a good position. Chest strap to distribute weight.
 
-## Research (filled in)
+While it is a bit on the bigger side, especially for my height, it can squish down when nothing is in it and expand when there is stuff.
+
+The clamshell opening is super useful for my back, but it can also be used as a regular backpack.
+
+## Research
 
 | Fact | Value | Source |
 |---|---|---|
-| Line | Aer Pro Pack, 20L and 24L | [Aer](https://aersf.com/products/pro-pack-24l) |
-| Material | 840D CORDURA re/cor recycled nylon | same |
-| Pro Pack 20L price | ~$179 | [Nomads Nation](https://nomadsnation.com/aer-pro-pack-20l-review/) |
-| Release | 20L reviewed Mar 2023, 24L reviewed Dec 2023 | [Pack Hacker](https://www.packhacker.com/travel-gear/aer/pro-pack-24l/) |
-| Notable 24L features | clamshell, luggage pass-through, hidden AirTag pocket with key clip, valet pocket, admin panel, dense strap padding | Pack Hacker |
+| Model | Aer City Pack Pro 2 24L, Black. Ordered Mar 30 2026, delivered Apr 6 2026 | order confirmation |
+| Material | 1680D CORDURA ballistic nylon (base version), YKK zippers, Duraflex hardware. Also sold in X-Pac, Ecopak, Ultra | [Nomads Nation](https://nomadsnation.com/aer-city-pack-pro-2-review/) |
+| Size / weight | 46 x 30.5 x 18 cm, about 2.6-2.9 lb depending on fabric | [Stranded Variable](https://www.strandedvariable.com/posts/review-aer-city-pack-pro-2-24l-ultra) |
+| Sizes | 24L came first, 20L added about a year later after feedback | [Pack Hacker](https://www.packhacker.com/travel-gear/aer/city-pack-pro-2-20l/) |
+| The details you noticed | horseshoe-zip admin panel, pen slot, hidden AirTag pocket with key leash, horizontal luggage pass-through, second bottle pocket, lay-flat clamshell main compartment | [Pack Hacker](https://www.packhacker.com/travel-gear/aer/city-pack-pro-2/) |
 
-## Still missing from you
+## Gaps
 
-- [FILL IN] The full shortlist and one-line reason each lost. Without this the post is just a review.
-- [FILL IN] Price paid, colour, purchase date.
-- [FILL IN] Budget you set going in.
-- [FILL IN] Time owned and current condition.
+- [FILL IN] The shortlist and one reason each bag lost. This is the only real hole in the series. No notes on it turned up in Drive or Gmail, and I can't see your Claude chat history, so this one is on you.
+- [FILL IN] About 5 months in now. Shoulder pain gone? Any wear?
