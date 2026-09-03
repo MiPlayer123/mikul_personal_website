@@ -19,9 +19,9 @@ Started looking into these (from my research at the time):
 
 Compared them all, but here are the issues with each one:
 
-- Almond Oak: [FILL IN, my guess: 280D nylon is thin, and the whole point was buying once for many years]
-- Evergoods CPL24: [FILL IN, my guess: no luggage pass-through and no bottle pockets killed it for travel use]
-- Aer Travel Pack 3 Small: [FILL IN, my guess: too big for the daily commute, and the City Pack Pro already covered the travel case]
+- Almond Oak: the clamshell opens sideways, like opening a book, and I didn't like that.
+- Evergoods CPL24: no luggage pass-through and no water bottle pockets, which killed it for travel.
+- Aer Travel Pack 3 Small: too big for the daily commute, and the City Pack Pro already covered the travel case.
 
 Then the City Pack Pro 2 came out in both 20L and 24L. Ended up taking the 24L as it is not much physically bigger but has a lot more space.
 
@@ -47,5 +47,4 @@ The clamshell opening is super useful for my back, but it can also be used as a 
 
 ## Gaps
 
-- [FILL IN] Why each of the three losers lost. I put a guess next to each based on your requirements. Confirm, or replace with the real reason.
 - [FILL IN] About 5 months in now. Shoulder pain gone? Any wear?

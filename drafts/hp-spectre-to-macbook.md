@@ -12,7 +12,7 @@ I needed a laptop for high school (freshman year, 2019). Here were my requiremen
 
 I spent months researching laptops (remember, pre-AI). Surprisingly it was almost impossible to find something that fits the requirements at a reasonable price. There were always some sort of tradeoffs.
 
-At the end I narrowed it to a ThinkPad (no GPU), Dell XPS 15 (not 2-in-1), HP Spectre x360 (hit all of them).
+At the end I narrowed it to a ThinkPad 2-in-1 (no GPU), Dell XPS 15 (not 2-in-1), HP Spectre x360 (hit all of them).
 
 After a lot of debating, ended up going with the HP.
 
@@ -45,6 +45,6 @@ Super happy now. I'm not going back to Windows.
 ## Gaps
 
 - Timeline worked out from "senior in college now": HS freshman fall 2019, HP bought 2019, college freshman 2023-24, Mac summer 2024. Matches the M3 Pro (Nov 2023 launch).
-- [FILL IN] Which ThinkPad was in the running (X1 Yoga?).
+- ThinkPad model: you don't remember, so the post just says "a ThinkPad". If you want a name, the X1 Yoga was the 2019 ThinkPad 2-in-1 with a pen and no GPU, so it fits.
 - [FILL IN] One concrete "even better for engineering" example if you have one. Not required.
 - Failure modes on units 2 and 3: you said you can't remember, so the notes now say that once, plainly. Fine to leave it.
