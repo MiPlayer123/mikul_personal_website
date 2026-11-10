@@ -25,6 +25,7 @@ import setbuilder from "@/public/setbuilder.png";
 import constellationClock from "@/public/constellation_clock.png";
 import datavis from "@/public/datavis.png";
 import keel from "@/public/keel.png";
+import causalHealthBench from "@/public/causalhealthbench.png";
 
 export const links = [
   {
@@ -168,6 +169,14 @@ export const projectsData = [
     tags: ["AI", "Fintech", "Automation", "Underwriting"],
     imageUrl: wagooLending,
     url: "https://wagoo.ai",
+  },
+  {
+    title: "CausalHealthBench - NeurIPS 2026",
+    description:
+      "A benchmark testing whether AI chatbots make correct causal claims and give safe advice on personal health data.",
+    tags: ["NeurIPS", "LLM Eval", "Causal Inference", "Health AI"],
+    imageUrl: causalHealthBench,
+    url: "https://openreview.net/forum?id=9OZKEWoay7",
   },
   {
     title: "Keel Financial OS",
