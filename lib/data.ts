@@ -26,6 +26,7 @@ import constellationClock from "@/public/constellation_clock.png";
 import datavis from "@/public/datavis.png";
 import keel from "@/public/keel.png";
 import causalHealthBench from "@/public/causalhealthbench.png";
+import loopwatt from "@/public/loopwatt.png";
 
 export const links = [
   {
@@ -177,6 +178,14 @@ export const projectsData = [
     tags: ["NeurIPS", "LLM Eval", "Causal Inference", "Health AI"],
     imageUrl: causalHealthBench,
     url: "https://openreview.net/forum?id=9OZKEWoay7",
+  },
+  {
+    title: "LoopWatt - Edge Robotics",
+    description:
+      "A controller that tunes a robot policy's compute and the Jetson's power state on the fly to cut energy per task.",
+    tags: ["Robotics", "Edge AI", "Jetson", "Energy"],
+    imageUrl: loopwatt,
+    url: "",
   },
   {
     title: "Keel Financial OS",
