@@ -172,10 +172,10 @@ export const projectsData = [
     url: "https://wagoo.ai",
   },
   {
-    title: "CausalHealthBench - NeurIPS 2026",
+    title: "CausalHealthBench - NeurIPS Workshop",
     description:
-      "A benchmark testing whether AI chatbots make correct causal claims and give safe advice on personal health data.",
-    tags: ["NeurIPS", "LLM Eval", "Causal Inference", "Health AI"],
+      "A benchmark showing AI struggles to turn wearable data into safe health advice, and more data makes correlation more confidently wrong.",
+    tags: ["NeurIPS Workshop", "LLM Eval", "Health AI"],
     imageUrl: causalHealthBench,
     url: "https://openreview.net/forum?id=9OZKEWoay7",
   },
